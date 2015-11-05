@@ -89,6 +89,39 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
        </xsl:if>
        <td style="text-align: center;"><xsl:value-of select="home/@sog"/></td>
       </tr>
+      <xsl:if test="count(home/score) = 3">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>&#160;</th>
+        <th>&#160;</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
+      <xsl:if test="count(home/score) = 4">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>OT</th>
+        <th>&#160;</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
+      <xsl:if test="count(home/score) = 5">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>OT</th>
+        <th>SO</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
       <tr>
        <td style="text-align: center;"><xsl:value-of select="away/@team"/></td>
        <xsl:for-each select="away/score">
