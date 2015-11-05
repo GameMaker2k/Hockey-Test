@@ -1,5 +1,5 @@
 <?php
-ob_start("ob_gzhandler");
+if(!ob_start("ob_gzhandler")) { ob_start(); }
 header("Content-Type: application/xhtml+xml; charset=UTF-8");
 header("Content-Style-Type: text/css");
 header("Content-Script-Type: text/javascript");
@@ -15,7 +15,6 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
  <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
   <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
  </head>
  <body>

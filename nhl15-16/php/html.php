@@ -1,5 +1,5 @@
 <?php
-ob_start("ob_gzhandler");
+if(!ob_start("ob_gzhandler")) { ob_start(); }
 header("Content-Type: text/html; charset=UTF-8");
 header("Content-Style-Type: text/css");
 header("Content-Script-Type: text/javascript");
@@ -14,7 +14,6 @@ $leaguename = "NHL";
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
  </head>
  <body>

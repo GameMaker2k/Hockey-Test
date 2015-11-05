@@ -1,5 +1,5 @@
 <?php
-ob_start("ob_gzhandler");
+if(!ob_start("ob_gzhandler")) { ob_start(); }
 if(stristr($_SERVER["HTTP_ACCEPT"],"application/xml+xslt") ) {
 header("Content-Type: application/xml+xslt; charset=UTF-8"); }
 elseif(stristr($_SERVER["HTTP_ACCEPT"],"application/xml") ) {
@@ -21,7 +21,6 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
   <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
    <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
    </head>
    <body>
