@@ -1,6 +1,8 @@
 <?php
 ob_start("ob_gzhandler");
-header("Content-Type: application/xml; charset=UTF-8");
+if(stristr($_SERVER["HTTP_ACCEPT"],"application/xml") ) {
+header("Content-Type: application/xml; charset=UTF-8"); }
+else { header("Content-Type: text/xml; charset=UTF-8"); }
 header("Content-Style-Type: text/css");
 header("Content-Script-Type: text/javascript");
 header("Content-Language: en");
@@ -9,7 +11,122 @@ header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
 $leaguename = "NHL";
+if(isset($_GET['xslt']) || (isset($_GET['act']) && $_GET['act']=="xslt")) {
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:template match="/">
+  <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
+   <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
+    <table style="width: 100%;">
+     <xsl:for-each select="/hockey/game">
+      <tr>
+       <th colspan="7"><xsl:value-of select="home/@team"/> vs <xsl:value-of select="away/@team"/> at <xsl:value-of select="@arena"/> on <xsl:value-of select="@date"/></th>
+      </tr>
+      <xsl:if test="count(home/score) = 3">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>&#160;</th>
+        <th>&#160;</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
+      <xsl:if test="count(home/score) = 4">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>OT</th>
+        <th>&#160;</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
+      <xsl:if test="count(home/score) = 5">
+       <tr>
+        <th>Teams</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>OT</th>
+        <th>SO</th>
+        <th>Total</th>
+       </tr>
+      </xsl:if>
+      <tr>
+       <td style="text-align: center;"><xsl:value-of select="home/@team"/></td>
+       <xsl:for-each select="home/score">
+        <td style="text-align: center;"><xsl:value-of select="@goals"/></td>
+       </xsl:for-each>
+       <xsl:if test="count(home/score) = 3">
+        <td style="text-align: center;">&#160;</td>
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <xsl:if test="count(home/score) = 4">
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+      <td style="text-align: center;"><xsl:value-of select="home/@goals"/></td>
+      </tr>
+      <tr>
+       <td style="text-align: center;">Shots on Goal</td>
+       <xsl:for-each select="home/score">
+        <td style="text-align: center;"><xsl:value-of select="@sog"/></td>
+       </xsl:for-each>
+       <xsl:if test="count(home/score) = 3">
+        <td style="text-align: center;">&#160;</td>
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <xsl:if test="count(home/score) = 4">
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <td style="text-align: center;"><xsl:value-of select="home/@sog"/></td>
+      </tr>
+      <tr>
+       <td style="text-align: center;"><xsl:value-of select="away/@team"/></td>
+       <xsl:for-each select="away/score">
+        <td style="text-align: center;"><xsl:value-of select="@goals"/></td>
+       </xsl:for-each>
+       <xsl:if test="count(home/score) = 3">
+        <td style="text-align: center;">&#160;</td>
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <xsl:if test="count(home/score) = 4">
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+      <td style="text-align: center;"><xsl:value-of select="away/@goals"/></td>
+      </tr>
+      <tr>
+       <td style="text-align: center;">Shots on Goal</td>
+       <xsl:for-each select="away/score">
+        <td style="text-align: center;"><xsl:value-of select="@sog"/></td>
+       </xsl:for-each>
+       <xsl:if test="count(home/score) = 3">
+        <td style="text-align: center;">&#160;</td>
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <xsl:if test="count(home/score) = 4">
+        <td style="text-align: center;">&#160;</td>
+       </xsl:if>
+       <td style="text-align: center;"><xsl:value-of select="away/@sog"/></td>
+      </tr>
+      <tr>
+       <td colspan="7" style="text-align: center;">&#160;</td>
+      </tr>
+      <tr>
+       <td colspan="7" style="text-align: center;">&#160;</td>
+      </tr>
+     </xsl:for-each>
+    </table>
+   </body>
+  </html>
+ </xsl:template>
+</xsl:stylesheet>
+<?php exit(); }
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+echo "<?xml-stylesheet type=\"text/xsl\" href=\"xml.php?xslt\"?>\n";
 ?>
 <!DOCTYPE hockey [
 <!ELEMENT hockey (game)* >
