@@ -17,7 +17,12 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  <xsl:template match="/">
   <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
-   <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
+   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
+   </head>
+   <body>
     <table style="width: 100%;">
      <xsl:for-each select="/hockey/game">
       <tr>

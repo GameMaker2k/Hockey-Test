@@ -13,8 +13,8 @@ $leaguename = "NHL";
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
  </head>
  <body>
