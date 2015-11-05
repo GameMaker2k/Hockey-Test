@@ -1,6 +1,8 @@
 <?php
 ob_start("ob_gzhandler");
-if(stristr($_SERVER["HTTP_ACCEPT"],"application/xml") ) {
+if(stristr($_SERVER["HTTP_ACCEPT"],"application/xml+xslt") ) {
+header("Content-Type: application/xml+xslt; charset=UTF-8"); }
+elseif(stristr($_SERVER["HTTP_ACCEPT"],"application/xml") ) {
 header("Content-Type: application/xml; charset=UTF-8"); }
 else { header("Content-Type: text/xml; charset=UTF-8"); }
 header("Content-Style-Type: text/css");
@@ -351,7 +353,7 @@ while ($trow = $tresults->fetchArray()) {
 $conresults = $sqldb->query("SELECT * FROM ".$leaguename."Conferences");
 while ($conrow = $conresults->fetchArray()) {
 if($_GET['conference']=="All" || $_GET['conference']==$conrow['Conference']) {
-echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n";
+echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n";
 $tresults = $sqldb->query("SELECT * FROM ".$leaguename."Standings WHERE Conference='".$sqldb->escapeString($conrow['Conference'])."' ORDER BY PCT DESC, GamesPlayed ASC, Losses ASC, Wins DESC, GoalsDifference DESC");
 echo "\n <tr>\n   <th colspan=\"18\"><a href=\"index.php?stats&amp;#".$conrow['Conference']."ConferenceStats\" id=\"".$conrow['Conference']."ConferenceStats\">".$leaguename." ".$conrow['Conference']." Conference Stats &amp; Standings</a></th>\n </tr>";
 echo "\n <tr>\n   <th colspan=\"2\">Team</th>\n   <th>GP</th>\n   <th>W</th>\n   <th>L</th>\n   <th>OTL</th>\n   <th>SOL</th>\n   <th>P</th>\n   <th>PCT</th>\n   <th>ROW</th>\n   <th>GF</th>\n   <th>GA</th>\n   <th>DIFF</th>\n   <th>Home</th>\n   <th>Away</th>\n   <th>S/O</th>\n   <th>L10</th>\n   <th>Streak</th>\n </tr>";
@@ -363,7 +365,7 @@ while ($trow = $tresults->fetchArray()) {
 $divresults = $sqldb->query("SELECT * FROM ".$leaguename."Divisions");
 while ($divrow = $divresults->fetchArray()) {
 if($_GET['division']=="All" || $_GET['division']==$divrow['Division']) {
-echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n";
+echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n";
 $tresults = $sqldb->query("SELECT * FROM ".$leaguename."Standings WHERE Division='".$sqldb->escapeString($divrow['Division'])."' ORDER BY PCT DESC, GamesPlayed ASC, Losses ASC, Wins DESC, GoalsDifference DESC");
 echo "\n <tr>\n   <th colspan=\"18\"><a href=\"index.php?stats&amp;#".$divrow['Division']."DivisionStats\" id=\"".$divrow['Division']."DivisionStats\">".$leaguename." ".$divrow['Division']." Division Team Stats &amp; Standings</a></th>\n </tr>";
 echo "\n <tr>\n   <th colspan=\"2\">Team</th>\n   <th>GP</th>\n   <th>W</th>\n   <th>L</th>\n   <th>OTL</th>\n   <th>SOL</th>\n   <th>P</th>\n   <th>PCT</th>\n   <th>ROW</th>\n   <th>GF</th>\n   <th>GA</th>\n   <th>DIFF</th>\n   <th>Home</th>\n   <th>Away</th>\n   <th>S/O</th>\n   <th>L10</th>\n   <th>Streak</th>\n </tr>";
@@ -372,7 +374,7 @@ while ($trow = $tresults->fetchArray()) {
     if($trow['Shootouts']=="0:0") { $trow['Shootouts'] = "-"; }
     if($trow['GoalsDifference']=="0") { $trow['GoalsDifference'] = "E"; }
     echo "\n <tr>\n   <td style=\"text-align: center;\">".$teamplace."</td>\n   <td style=\"text-align: center;\"><a href=\"?games&amp;date=".urlencode($trow['Date'])."&amp;team=".urlencode($trow['FullName'])."\">".htmlentities($trow['FullName'], ENT_QUOTES, "UTF-8")."</a></td>\n   <td style=\"text-align: center;\">".$trow['GamesPlayed']."</td>\n   <td style=\"text-align: center;\">".$trow['TWins']."</td>\n   <td style=\"text-align: center;\">".$trow['Losses']."</td>\n   <td style=\"text-align: center;\">".$trow['OTLosses']."</td>\n   <td style=\"text-align: center;\">".$trow['SOLosses']."</td>\n   <td style=\"text-align: center;\">".$trow['Points']."</td>\n   <td style=\"text-align: center;\">".number_format($trow['PCT'], 3)."</td>\n   <td style=\"text-align: center;\">".$trow['ROW']."</td>\n   <td style=\"text-align: center;\">".$trow['GoalsFor']."</td>\n   <td style=\"text-align: center;\">".$trow['GoalsAgainst']."</td>\n   <td style=\"text-align: center;\">".$trow['GoalsDifference']."</td>\n   <td style=\"text-align: center;\">".str_replace(":", "-", $trow['HomeRecord'])."</td>\n   <td style=\"text-align: center;\">".str_replace(":", "-", $trow['AwayRecord'])."</td>\n   <td style=\"text-align: center;\">".str_replace(":", "-", $trow['Shootouts'])."</td>\n   <td style=\"text-align: center;\">".str_replace(":", "-", $trow['LastTen'])."</td>\n   <td style=\"text-align: center;\">".$trow['Streak']."</td>\n </tr>"; $teamplace += 1; } } }
-echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&nbsp;</td>\n </tr>\n";
-echo "\n</table>\n<div>&nbsp;<br />&nbsp;</div>\n\n"; }
+echo " <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n <tr>\n   <td colspan=\"18\" style=\"text-align: center;\">&#160;</td>\n </tr>\n";
+echo "\n</table>\n<div>&#160;<br />&#160;</div>\n\n"; }
 echo "</hockey>";
 ?>
