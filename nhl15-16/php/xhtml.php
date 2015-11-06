@@ -12,7 +12,7 @@ $leaguename = "NHL";
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
  <head>
   <meta charset="UTF-8" />
   <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
