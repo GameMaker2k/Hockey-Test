@@ -16,7 +16,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  <xsl:template match="/">
-  <html xsl:version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
+  <html xsl:version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
    <head>
     <meta charset="UTF-8" />
     <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
