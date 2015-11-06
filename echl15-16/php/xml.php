@@ -5,8 +5,6 @@ header("Content-Type: application/xml+xslt; charset=UTF-8"); }
 elseif(stristr($_SERVER["HTTP_ACCEPT"],"application/xml") ) {
 header("Content-Type: application/xml; charset=UTF-8"); }
 else { header("Content-Type: text/xml; charset=UTF-8"); }
-header("Content-Style-Type: text/css");
-header("Content-Script-Type: text/javascript");
 header("Content-Language: en");
 header("Vary: Accept-Encoding");
 header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
@@ -16,9 +14,9 @@ $leaguename = "ECHL";
 if(isset($_GET['xslt']) || (isset($_GET['act']) && $_GET['act']=="xslt")) {
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  <xsl:template match="/">
-  <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
+  <html xsl:version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
    <head>
     <meta charset="UTF-8" />
     <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
@@ -63,7 +61,12 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
        </tr>
       </xsl:if>
       <tr>
-       <td style="text-align: center;"><xsl:value-of select="home/@team"/></td>
+       <xsl:if test="home/@goals &gt; away/@goals">
+        <td style="text-align: center; font-weight: bold;"><xsl:value-of select="home/@team"/></td>
+       </xsl:if>
+       <xsl:if test="home/@goals &lt; away/@goals">
+        <td style="text-align: center;"><xsl:value-of select="home/@team"/></td>
+       </xsl:if>
        <xsl:for-each select="home/score">
         <td style="text-align: center;"><xsl:value-of select="@goals"/></td>
        </xsl:for-each>
@@ -124,7 +127,12 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
        </tr>
       </xsl:if>
       <tr>
-       <td style="text-align: center;"><xsl:value-of select="away/@team"/></td>
+       <xsl:if test="away/@goals &gt; home/@goals">
+        <td style="text-align: center; font-weight: bold;"><xsl:value-of select="away/@team"/></td>
+       </xsl:if>
+       <xsl:if test="away/@goals &lt; home/@goals">
+        <td style="text-align: center;"><xsl:value-of select="away/@team"/></td>
+       </xsl:if>
        <xsl:for-each select="away/score">
         <td style="text-align: center;"><xsl:value-of select="@goals"/></td>
        </xsl:for-each>
