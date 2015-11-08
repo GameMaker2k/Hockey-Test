@@ -25,6 +25,46 @@ if(isset($_GET['month']) && strlen($_GET['month'])==1) {
  $_GET['month'] = "0".$_GET['month']; }
 if(isset($_GET['day']) && strlen($_GET['day'])==1) {
  $_GET['day'] = "0".$_GET['day']; }
+if(isset($_GET['date']) && strlen($_GET['date'])==8) {
+ $chckyear = substr($_GET['date'], 0, 4);
+ $chckmonth = substr($_GET['date'], 4, 2);
+ if($chckmonth>12) { $chckmonth = $chckmonth = "12"; }
+ if($chckmonth<1) { $chckmonth = $chckmonth = "01"; }
+ $chckday = substr($_GET['date'], 6, 2);
+ if($chckday>gmdate("t", gmmktime(0, 0, 0, $chckmonth, 1, $chckyear))) { $chckday = gmdate("t", gmmktime(0, 0, 0, $chckmonth, 1, $chckyear)); }
+ if($chckday<1) { $chckday = "01"; } 
+ $_GET['date'] = $chckyear.$chckmonth.$chckday; }
+if(isset($_GET['date']) && strlen($_GET['date'])==6) {
+ $chckyear = substr($_GET['date'], 0, 4);
+ if($chckmonth>12) { $chckmonth = $chckmonth = "12"; }
+ if($chckmonth<1) { $chckmonth = $chckmonth = "01"; }
+ $chckmonth = substr($_GET['date'], 4, 2);
+ $_GET['date'] = $chckyear.$chckmonth; }
+if((isset($_GET['day']) && strlen($_GET['day'])==2)) {
+ if((isset($_GET['year']) && strlen($_GET['year'])==4)) {
+  if((isset($_GET['month']) && strlen($_GET['month'])==2)) {
+   if($_GET['month']>12) { $_GET['month'] = 12; }
+   if($_GET['month']<1) { $_GET['month'] = "01"; }
+   if($_GET['day']<1) { $_GET['day'] = "01"; }
+   if($_GET['day']>gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year']))) { $_GET['day'] = gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year'])); } }
+  if((!isset($_GET['month']) || strlen($_GET['month'])!=2)) {
+   $_GET['month'] = gmdate("m");
+   if($_GET['day']<1) { $_GET['day'] = "01"; }
+   if($_GET['day']>gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year']))) { $_GET['day'] = gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year'])); } } }
+ if((!isset($_GET['year']) || strlen($_GET['year'])!=4)) {
+  if((isset($_GET['month']) && strlen($_GET['month'])==2)) {
+   if($_GET['month']>12) { $_GET['month'] = 12; }
+   if($_GET['month']<1) { $_GET['month'] = "01"; }
+   $_GET['year'] = gmdate("Y");
+   if($_GET['day']<1) { $_GET['day'] = "01"; }
+   if($_GET['day']>gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year']))) { $_GET['day'] = gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year'])); } }
+  if((!isset($_GET['month']) || strlen($_GET['month'])!=2)) {
+   if($_GET['month']>12) { $_GET['month'] = 12; }
+   if($_GET['month']<1) { $_GET['month'] = "01"; }
+   $_GET['year'] = gmdate("Y");
+   $_GET['month'] = gmdate("m");
+   if($_GET['day']<1) { $_GET['day'] = "01"; }
+   if($_GET['day']>gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year']))) { $_GET['day'] = gmdate("t", gmmktime(0, 0, 0, $_GET['month'], 1, $_GET['year'])); } } } }
 if(!isset($_GET['year']) && isset($_GET['month']) && isset($_GET['day']) &&
    is_numeric($_GET['month']) && is_numeric($_GET['day']) &&
    strlen($_GET['month'])==2 && strlen($_GET['day'])==2) {
