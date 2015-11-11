@@ -7,7 +7,7 @@ sqlcon = sqlite3.connect("../hockey15-16.db3");
 sqlcur = sqlcon.cursor();
 
 leaguename = "NHL";
-getforday = "23";
+getforday = "7";
 getformonth = "10";
 getforyear = "2015";
 getendyear = "2016";

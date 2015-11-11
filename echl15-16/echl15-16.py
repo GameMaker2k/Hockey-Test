@@ -4,7 +4,7 @@
 import sqlite3, sys, os, re;
 
 leaguename = "ECHL";
-getforday = "9";
+getforday = "7";
 getformonth = "10";
 getforyear = "2015";
 
