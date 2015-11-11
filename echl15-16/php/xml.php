@@ -262,43 +262,6 @@ $sqldb->exec("PRAGMA encoding = \"UTF-8\";");
 $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
-function get_last_ten_games($teamid, $sqlink) {
- global $leaguename;
- $ltresults = $sqlink->query("SELECT * FROM ".$leaguename."Games WHERE (TeamOne=".$teamid." OR TeamTwo=".$teamid.") ORDER BY id DESC LIMIT 10");
- $teamwins = 0;
- $teamlosses = 0;
- $teamotlosses = 0;
- while ($ltrow = $ltresults->fetchArray()) {
-  if($teamid==$ltrow['TeamWin']) {
-   $teamwins += 1; }
-  if($teamid!=$ltrow['TeamWin']) {
-   if($ltrow['NumberPeriods']==3) {
-    $teamlosses += 1; }
-   if($ltrow['NumberPeriods']>3) {
-    $teamotlosses += 1; } } }
- return $teamwins."-".$teamlosses."-".$teamotlosses; }
-function get_streak_num($teamid, $sqlink) {
- global $leaguename;
- $ltresults = $sqlink->query("SELECT * FROM ".$leaguename."Games WHERE (TeamOne=".$teamid." OR TeamTwo=".$teamid.") ORDER BY id DESC");
- $streak = "";
- $teamwins = 0;
- $teamlosses = 0;
- $teamotlosses = 0;
- while ($ltrow = $ltresults->fetchArray()) {
-  if($teamid==$ltrow['TeamWin']) {
-   if($teamlosses>0 || $teamotlosses>0) { break; }
-   $teamwins += 1; }
-  if($teamid!=$ltrow['TeamWin']) {
-   if($ltrow['NumberPeriods']==3) {
-    if($teamwins>0 || $teamotlosses>0) { break; }
-    $teamlosses += 1; }
-   if($ltrow['NumberPeriods']>3) {
-    if($teamwins>0 || $teamlosses>0) { break; }
-    $teamotlosses += 1; } } }
- if($streak=="" && $teamwins>0) { $streak = "Won ".$teamwins; }
- if($streak=="" && $teamlosses>0) { $streak = "Lost ".$teamlosses; }
- if($streak=="" && $teamotlosses>0) { $streak = "OT ".$teamotlosses; }
- return $streak; }
 if($_GET['act']=="view") {
 $SelectWhere = "";
 $SelectWhereNext = false;
@@ -320,7 +283,7 @@ if(isset($_GET['team'])) {
  if($SelectWhereNext==false) {
   $SelectWhere = "WHERE (TeamOne='".$sqldb->escapeString($_GET['team'])."' OR TeamTwo='".$sqldb->escapeString($_GET['team'])."') ";
   $SelectWhereNext = true; } }
-$results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY id DESC");
+$results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY Date DESC, id DESC");
 while ($row = $results->fetchArray()) {
     $toneres = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['TeamOne'])."'", true);
     $ttwores = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['TeamTwo'])."'", true);
