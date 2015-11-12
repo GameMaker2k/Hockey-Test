@@ -1,6 +1,11 @@
 #!/usr/bin/make -f
 
-.PHONY: all
+.PHONY: all builddatabase gethockeygames
 
-all:
+all: builddatabase
+
+builddatabase:
 	./hockey15-16.sh
+
+gethockeygames:
+	./gethockeygames.sh
