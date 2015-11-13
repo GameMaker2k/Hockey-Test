@@ -9,12 +9,14 @@ header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
 $leaguename = "NHL";
+$fullurl = $_SERVER["REQUEST_SCHEME"]."://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <!DOCTYPE html>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
  <head>
   <meta charset="UTF-8" />
+  <base href="<?php echo $fullurl; ?>" />
   <title><?php echo $leaguename; ?> Games &amp; Team Stats</title>
  </head>
  <body>

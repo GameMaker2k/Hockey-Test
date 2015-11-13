@@ -11,7 +11,9 @@ header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
 $leaguename = "AHL";
+$fullurl = $_SERVER["REQUEST_SCHEME"]."://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/");
 if(isset($_GET['xslt']) || (isset($_GET['act']) && $_GET['act']=="xslt")) {
+header("Content-Type: application/xslt+xml; charset=UTF-8");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -172,8 +174,9 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
  </xsl:template>
 </xsl:stylesheet>
 <?php exit(); }
+if(isset($_GET['dtd']) || (isset($_GET['act']) && $_GET['act']=="dtd")) {
+header("Content-Type: application/xml-dtd; charset=UTF-8");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-echo "<?xml-stylesheet type=\"text/xsl\" href=\"xml.php?xslt\"?>\n";
 ?>
 <!DOCTYPE hockey [
 <!ELEMENT hockey (game)* >
@@ -194,8 +197,10 @@ echo "<?xml-stylesheet type=\"text/xsl\" href=\"xml.php?xslt\"?>\n";
 <!ATTLIST game date CDATA #REQUIRED >
 <!ATTLIST game arena CDATA #REQUIRED >
 ]>
-
-<?php
+<?php exit(); }
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+echo "<?xml-stylesheet type=\"text/xsl\" href=\"".$fullurl."xml.php?xslt\"?>\n";
+echo "<!DOCTYPE hockey SYSTEM \"".$fullurl."xml.php?dtd\">\n";
 echo "<hockey league=\"".$leaguename."\">\n\n";
 if(!isset($_GET['act'])&&isset($_GET['view'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['games'])) { $_GET['act'] = "view"; }
