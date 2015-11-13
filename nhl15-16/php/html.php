@@ -9,7 +9,11 @@ header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
 $leaguename = "NHL";
-$fullurl = $_SERVER["REQUEST_SCHEME"]."://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/");
+$fullurl = "http://localhost/hockey/nhl/";
+if(isset($_SERVER['HTTPS'])) {
+ $fullurl = "https://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); } 
+if(!isset($_SERVER['HTTPS'])) {
+ $fullurl = "http://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); }
 ?>
 <!DOCTYPE html>
 <html lang="en">

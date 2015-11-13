@@ -5,7 +5,11 @@ header("Vary: Accept-Encoding");
 header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
-$fullurl = $_SERVER["REQUEST_SCHEME"]."://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/");
+$fullurl = "http://localhost/hockey/echl/";
+if(isset($_SERVER['HTTPS'])) {
+ $fullurl = "https://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); } 
+if(!isset($_SERVER['HTTPS'])) {
+ $fullurl = "http://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); }
 if(!isset($_GET['output'])) { 
  if(isset($_GET['html'])) { 
     $_GET['output'] = "html"; }
