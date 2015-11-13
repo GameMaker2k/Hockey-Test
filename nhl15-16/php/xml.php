@@ -182,25 +182,23 @@ if(isset($_GET['dtd']) || (isset($_GET['act']) && $_GET['act']=="dtd")) {
 header("Content-Type: application/xml-dtd; charset=UTF-8");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
-<!DOCTYPE hockey [
-<!ELEMENT hockey (game)* >
-<!ATTLIST hockey league CDATA #IMPLIED >
-<!ELEMENT away (score)* >
-<!ATTLIST away team CDATA #REQUIRED >
-<!ATTLIST away goals CDATA #REQUIRED >
-<!ATTLIST away sog CDATA #IMPLIED >
-<!ELEMENT home (score)* >
-<!ATTLIST home team CDATA #REQUIRED >
-<!ATTLIST home goals CDATA #REQUIRED >
-<!ATTLIST home sog CDATA #IMPLIED >
+<!ELEMENT hockey (game)*>
+<!ATTLIST hockey league CDATA #IMPLIED>
+<!ELEMENT away (score)*>
+<!ATTLIST away team CDATA #REQUIRED>
+<!ATTLIST away goals CDATA #REQUIRED>
+<!ATTLIST away sog CDATA #IMPLIED>
+<!ELEMENT home (score)*>
+<!ATTLIST home team CDATA #REQUIRED>
+<!ATTLIST home goals CDATA #REQUIRED>
+<!ATTLIST home sog CDATA #IMPLIED>
 <!ELEMENT score  EMPTY >
-<!ATTLIST score period CDATA #REQUIRED >
-<!ATTLIST score goals CDATA #REQUIRED >
-<!ATTLIST score sog CDATA #IMPLIED >
-<!ELEMENT game (home,away)* >
-<!ATTLIST game date CDATA #REQUIRED >
-<!ATTLIST game arena CDATA #REQUIRED >
-]>
+<!ATTLIST score period CDATA #REQUIRED>
+<!ATTLIST score goals CDATA #REQUIRED>
+<!ATTLIST score sog CDATA #IMPLIED>
+<!ELEMENT game (home,away)*>
+<!ATTLIST game date CDATA #REQUIRED>
+<!ATTLIST game arena CDATA #REQUIRED>
 <?php exit(); }
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 echo "<?xml-stylesheet type=\"text/xsl\" href=\"".$fullurl."xml.php?xslt\"?>\n";
