@@ -200,6 +200,174 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 <!ATTLIST game date CDATA #REQUIRED>
 <!ATTLIST game arena CDATA #REQUIRED>
 <?php exit(); }
+if(isset($_GET['xsd']) || (isset($_GET['act']) && $_GET['act']=="xsd")) {
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="hockey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="game"/>
+      </xs:sequence>
+      <xs:attribute name="league"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="away">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="score"/>
+      </xs:sequence>
+      <xs:attribute name="team" use="required"/>
+      <xs:attribute name="goals" use="required"/>
+      <xs:attribute name="sog"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="home">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="score"/>
+      </xs:sequence>
+      <xs:attribute name="team" use="required"/>
+      <xs:attribute name="goals" use="required"/>
+      <xs:attribute name="sog"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="score">
+    <xs:complexType>
+      <xs:attribute name="period" use="required"/>
+      <xs:attribute name="goals" use="required"/>
+      <xs:attribute name="sog"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="game">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="home"/>
+        <xs:element ref="away"/>
+      </xs:sequence>
+      <xs:attribute name="date" use="required"/>
+      <xs:attribute name="arena" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<?php exit(); }
+if(isset($_GET['rnc']) || (isset($_GET['act']) && $_GET['act']=="rnc")) {
+header("Content-Type: text/plain; charset=UTF-8");
+?>
+hockey = element hockey { attlist.hockey, game* }
+attlist.hockey &= attribute league { text }?
+away = element away { attlist.away, score* }
+attlist.away &= attribute team { text }
+attlist.away &= attribute goals { text }
+attlist.away &= attribute sog { text }?
+home = element home { attlist.home, score* }
+attlist.home &= attribute team { text }
+attlist.home &= attribute goals { text }
+attlist.home &= attribute sog { text }?
+score = element score { attlist.score, empty }
+attlist.score &= attribute period { text }
+attlist.score &= attribute goals { text }
+attlist.score &= attribute sog { text }?
+game = element game { attlist.game, (home, away)* }
+attlist.game &= attribute date { text }
+attlist.game &= attribute arena { text }
+start = hockey
+<?php exit(); }
+if(isset($_GET['rng']) || (isset($_GET['act']) && $_GET['act']=="rng")) {
+header("Content-Type: pplication/relaxng+xml; charset=UTF-8");
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="hockey">
+    <element name="hockey">
+      <ref name="attlist.hockey"/>
+      <zeroOrMore>
+        <ref name="game"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="attlist.hockey" combine="interleave">
+    <optional>
+      <attribute name="league"/>
+    </optional>
+  </define>
+  <define name="away">
+    <element name="away">
+      <ref name="attlist.away"/>
+      <zeroOrMore>
+        <ref name="score"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="attlist.away" combine="interleave">
+    <attribute name="team"/>
+  </define>
+  <define name="attlist.away" combine="interleave">
+    <attribute name="goals"/>
+  </define>
+  <define name="attlist.away" combine="interleave">
+    <optional>
+      <attribute name="sog"/>
+    </optional>
+  </define>
+  <define name="home">
+    <element name="home">
+      <ref name="attlist.home"/>
+      <zeroOrMore>
+        <ref name="score"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="attlist.home" combine="interleave">
+    <attribute name="team"/>
+  </define>
+  <define name="attlist.home" combine="interleave">
+    <attribute name="goals"/>
+  </define>
+  <define name="attlist.home" combine="interleave">
+    <optional>
+      <attribute name="sog"/>
+    </optional>
+  </define>
+  <define name="score">
+    <element name="score">
+      <ref name="attlist.score"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="attlist.score" combine="interleave">
+    <attribute name="period"/>
+  </define>
+  <define name="attlist.score" combine="interleave">
+    <attribute name="goals"/>
+  </define>
+  <define name="attlist.score" combine="interleave">
+    <optional>
+      <attribute name="sog"/>
+    </optional>
+  </define>
+  <define name="game">
+    <element name="game">
+      <ref name="attlist.game"/>
+      <zeroOrMore>
+        <ref name="home"/>
+        <ref name="away"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="attlist.game" combine="interleave">
+    <attribute name="date"/>
+  </define>
+  <define name="attlist.game" combine="interleave">
+    <attribute name="arena"/>
+  </define>
+  <start>
+    <choice>
+      <ref name="hockey"/>
+    </choice>
+  </start>
+</grammar>
+<?php exit(); }
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 echo "<?xml-stylesheet type=\"text/xsl\" href=\"".$fullurl."xml.php?xslt\"?>\n";
 echo "<!DOCTYPE hockey SYSTEM \"".$fullurl."xml.php?dtd\">\n";
