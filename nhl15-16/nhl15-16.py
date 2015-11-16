@@ -249,6 +249,8 @@ MakeHockeyTeams((sqlcur, sqlcon), "San Jose", "CA", "Sharks", "Western", "Pacifi
 MakeHockeyTeams((sqlcur, sqlcon), "Vancouver", "BC", "Canucks", "Western", "Pacific", "Rogers Arena", "Vancouver");
 
 MakeHockeyArena((sqlcur, sqlcon), "Foxborough", "MA", "Gillette Stadium", "Foxborough");
+MakeHockeyArena((sqlcur, sqlcon), "Minneapolis", "MN", "TCF Bank Stadium", "Minneapolis");
+MakeHockeyArena((sqlcur, sqlcon), "Denver", "CO", "Coors Field", "Denver");
 sqlcon.commit();
 
 def GetNum2Team(sqldatacon, TeamNum, ReturnVar):

@@ -247,7 +247,6 @@ MakeHockeyTeams((sqlcur, sqlcon), "San Jose", "CA", "Barracuda", "Western", "Pac
 MakeHockeyTeams((sqlcur, sqlcon), "Stockton", "CA", "Heat", "Western", "Pacific", "Stockton Arena", "Stockton");
 MakeHockeyTeams((sqlcur, sqlcon), "Cedar Park", "TX", "Stars", "Western", "Pacific", "Cedar Park Center", "Texas");
 
-sqlcon.execute("INSERT INTO "+leaguename+"Arenas(CityName, AreaName, FullCityName, ArenaName, FullArenaName, GamesPlayed) VALUES(\"Foxborough\", \"MA\", \"Foxborough, MA\", \"Gillette Stadium\", \"Gillette Stadium, Foxborough\", 0)");
 sqlcon.commit();
 
 def GetNum2Team(sqldatacon, TeamNum, ReturnVar):
