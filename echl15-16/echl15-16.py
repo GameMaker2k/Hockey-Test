@@ -22,7 +22,7 @@ def GetLastTenGames(sqldatacon, teamname):
  wins = 0;
  losses = 0;
  otlosses = 0;
- getlastninegames = sqldatacon[0].execute("SELECT NumberPeriods, TeamWin FROM "+leaguename+"Games WHERE (TeamOne=\""+str(teamname)+"\" OR TeamTwo=\""+str(teamname)+"\") ORDER BY id DESC LIMIT 10").fetchall();
+ getlastninegames = sqldatacon[0].execute("SELECT NumberPeriods, TeamWin FROM "+leaguename+"Games WHERE (HomeTeam=\""+str(teamname)+"\" OR AwayTeam=\""+str(teamname)+"\") ORDER BY id DESC LIMIT 10").fetchall();
  nmax = len(getlastninegames);
  nmin = 0;
  while(nmin<nmax):
@@ -266,7 +266,7 @@ print("DONE! All Team Data Inserted.");
 print("Creating "+leaguename+" Game Table.");
 
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Games");
-sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, TeamOne Text, TeamTwo Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal INTEGER, FullShotsOnGoal INTEGER, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, HomeTeam Text, AwayTeam Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal INTEGER, FullShotsOnGoal INTEGER, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
 sqlcon.commit();
 
 def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongoal, atarena, isplayoffgame):
@@ -345,7 +345,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
   winningteamname = awayteamname;
   losingteamname = hometeamname;
  print(" ");
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Games(Date, TeamOne, TeamTwo, AtArena, TeamScorePeriods, TeamFullScore, ShotsOnGoal, FullShotsOnGoal, NumberPeriods, TeamWin, IsPlayOffGame) VALUES("+str(date)+", \""+str(hometeamname)+"\", \""+str(awayteamname)+"\", \""+str(atarenaname)+"\", \""+str(periodsscore)+"\", \""+str(totalscore)+"\", \""+str(shotsongoal)+"\", \""+str(totalsog)+"\", "+str(numberofperiods)+", \""+str(winningteamname)+"\", "+str(isplayoffgsql)+")");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Games(Date, HomeTeam, AwayTeam, AtArena, TeamScorePeriods, TeamFullScore, ShotsOnGoal, FullShotsOnGoal, NumberPeriods, TeamWin, IsPlayOffGame) VALUES("+str(date)+", \""+str(hometeamname)+"\", \""+str(awayteamname)+"\", \""+str(atarenaname)+"\", \""+str(periodsscore)+"\", \""+str(totalscore)+"\", \""+str(shotsongoal)+"\", \""+str(totalsog)+"\", "+str(numberofperiods)+", \""+str(winningteamname)+"\", "+str(isplayoffgsql)+")");
  UpdateArenaData(sqldatacon, atarena, "GamesPlayed", 1, "+");
  UpdateTeamData(sqldatacon, hometeam, "Date", int(date), "=");
  UpdateTeamData(sqldatacon, hometeam, "GamesPlayed", 1, "+");

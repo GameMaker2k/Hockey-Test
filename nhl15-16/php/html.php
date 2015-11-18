@@ -106,15 +106,15 @@ if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])
  $SelectWhereNext = true; }
 if(isset($_GET['team'])) {
  if($SelectWhereNext==true) {
-  $SelectWhere .= " AND (TeamOne='".$sqldb->escapeString($_GET['team'])."' OR TeamTwo='".$sqldb->escapeString($_GET['team'])."') "; }
+  $SelectWhere .= " AND (HomeTeam='".$sqldb->escapeString($_GET['team'])."' OR AwayTeam='".$sqldb->escapeString($_GET['team'])."') "; }
  if($SelectWhereNext==false) {
-  $SelectWhere = "WHERE (TeamOne='".$sqldb->escapeString($_GET['team'])."' OR TeamTwo='".$sqldb->escapeString($_GET['team'])."') ";
+  $SelectWhere = "WHERE (HomeTeam='".$sqldb->escapeString($_GET['team'])."' OR AwayTeam='".$sqldb->escapeString($_GET['team'])."') ";
   $SelectWhereNext = true; } }
 $results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY Date DESC, id DESC");
 echo "<table style=\"width: 100%;\">\n";
 while ($row = $results->fetchArray()) {
-    $toneres = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['TeamOne'])."'", true);
-    $ttwores = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['TeamTwo'])."'", true);
+    $toneres = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['HomeTeam'])."'", true);
+    $ttwores = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['AwayTeam'])."'", true);
     $tarenares = $sqldb->querySingle("SELECT CityName, ArenaName, FullArenaName FROM ".$leaguename."Arenas WHERE FullArenaName='".$sqldb->escapeString($row['AtArena'])."'", true);
     if($row['NumberPeriods']==3) {
        $PerPeriodScore = explode(",", $row['TeamScorePeriods']);
