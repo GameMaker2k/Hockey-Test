@@ -1,10 +1,15 @@
 <?php
 if(!ob_start("ob_gzhandler")) { ob_start(); }
+date_default_timezone_set("UTC");
 header("Content-Type: application/xhtml+xml; charset=UTF-8");
 header("Content-Style-Type: text/css");
 header("Content-Script-Type: text/javascript");
 header("Content-Language: en");
-header("Vary: Accept-Encoding");
+header("Vary: Accept-Encoding,Cookie");
+header("X-Content-Type-Options: nosniff");
+header("X-UA-Compatible: IE=Edge");
+header("Cache-Control: private, no-cache, no-store, must-revalidate, pre-check=0, post-check=0, max-age=0");
+header("Pragma: private, no-cache, no-store, must-revalidate, pre-check=0, post-check=0, max-age=0");
 header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
