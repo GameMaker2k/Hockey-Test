@@ -11,7 +11,10 @@ getendyear = "2016";
 
 print("Creating "+leaguename+" Database.");
 
-sqlcon = sqlite3.connect("../hockey15-16.db3");
+if(len(sys.argv) == 0):
+ sqlcon = sqlite3.connect("./nhl15-16.db3");
+if(len(sys.argv) > 0):
+ sqlcon = sqlite3.connect(sys.argv[1]);
 sqlcur = sqlcon.cursor();
 
 sqlcon.execute("PRAGMA encoding = \"UTF-8\";");
