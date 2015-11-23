@@ -183,7 +183,7 @@ $SelectWhereNext = false;
 if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==8) {
  $SelectWhere = "WHERE Date<=".$sqldb->escapeString($_GET['date'])." ";
  $SelectWhereNext = true; }
-$sqldb->exec("CREATE TEMP TABLE ".$leaguename."Standings AS SELECT * FROM ".$leaguename."Stats ".$SelectWhere." GROUP BY FullName ORDER BY Date DESC");
+$sqldb->exec("CREATE TEMP TABLE ".$leaguename."Standings AS SELECT * FROM ".$leaguename."Stats ".$SelectWhere." GROUP BY TeamID ORDER BY TeamID ASC, Date DESC");
 echo "<table style=\"width: 100%;\">";
 $tresults = $sqldb->query("SELECT * FROM ".$leaguename."Standings ORDER BY PCT DESC, GamesPlayed ASC, Losses ASC, Wins DESC, GoalsDifference DESC");
 echo "\n <tr>\n   <th colspan=\"18\"><a href=\"index.php?stats&amp;#OverallStats\" id=\"OverallStats\">".$leaguename." Team Stats &amp; Standings</a></th>\n </tr>";
