@@ -88,17 +88,24 @@ if(isset($_GET['year']) && isset($_GET['month']) && isset($_GET['day']) &&
 if($_GET['act']=="stats") {
  if(!isset($_GET['conference'])) { $_GET['conference'] = "All"; }
  if(!isset($_GET['division'])) { $_GET['division'] = "All"; } }
-if(!isset($_GET['act'])) { $_GET['act'] = "view"; }
-if($_GET['act']!="view" && $_GET['act']!="games" && $_GET['act']!="stats" && $_GET['act']!="calendar") { $_GET['act'] = "view"; }
+if(!isset($_GET['act'])) { $_GET['act'] = "calendar"; }
+if($_GET['act']!="view" && $_GET['act']!="games" && $_GET['act']!="stats" && $_GET['act']!="calendar") { $_GET['act'] = "calendar"; }
 $sqldb = new SQLite3("../hockey15-16.db3");
 $sqldb->exec("PRAGMA encoding = \"UTF-8\";");
 $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
 if($_GET['act']=="calendar") {
-if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==8) {
- $SelectWhere = "WHERE Date=".$sqldb->escapeString($_GET['date'])." ";
- $SelectWhereNext = true; }
+if(isset($_GET['date']) && strlen($_GET['date'])==8) {
+ if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
+  $_GET['month'] = substr($_GET['date'], 4, 2); }
+ if(!isset($_GET['year']) || !is_numeric($_GET['year'])) {
+  $_GET['year'] = substr($_GET['date'], 0, 4); } }
+if(isset($_GET['date']) && strlen($_GET['date'])==6) {
+ if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
+  $_GET['month'] = substr($_GET['date'], 4, 2); }
+ if(!isset($_GET['year']) || !is_numeric($_GET['year'])) {
+  $_GET['year'] = substr($_GET['date'], 0, 4); } }
 if(!isset($_GET['month']) || !is_numeric($_GET['month']) or !strlen($_GET['month'])==2) {
  $_GET['month'] = gmdate("m"); }
 if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])==2) {

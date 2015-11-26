@@ -446,9 +446,16 @@ $sqlite_games_string = "";
 if($_GET['act']=="calendar") {
 echo "</".strtolower($leaguename).">";
 die(1);
-if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==8) {
- $SelectWhere = "WHERE Date=".$sqldb->escapeString($_GET['date'])." ";
- $SelectWhereNext = true; }
+if(isset($_GET['date']) && strlen($_GET['date'])==8) {
+ if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
+  $_GET['month'] = substr($_GET['date'], 4, 2); }
+ if(!isset($_GET['year']) || !is_numeric($_GET['year'])) {
+  $_GET['year'] = substr($_GET['date'], 0, 4); } }
+if(isset($_GET['date']) && strlen($_GET['date'])==6) {
+ if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
+  $_GET['month'] = substr($_GET['date'], 4, 2); }
+ if(!isset($_GET['year']) || !is_numeric($_GET['year'])) {
+  $_GET['year'] = substr($_GET['date'], 0, 4); } }
 if(!isset($_GET['month']) || !is_numeric($_GET['month']) or !strlen($_GET['month'])==2) {
  $_GET['month'] = gmdate("m"); }
 if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])==2) {
