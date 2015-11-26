@@ -32,6 +32,7 @@ if(!isset($_SERVER['HTTPS'])) {
 if(!isset($_GET['act'])&&isset($_GET['view'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['games'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['stats'])) { $_GET['act'] = "stats"; }
+if(!isset($_GET['act'])&&isset($_GET['calendar'])) { $_GET['act'] = "calendar"; }
 if(isset($_GET['month']) && strlen($_GET['month'])==1) {
  $_GET['month'] = "0".$_GET['month']; }
 if(isset($_GET['day']) && strlen($_GET['day'])==1) {
@@ -88,12 +89,56 @@ if($_GET['act']=="stats") {
  if(!isset($_GET['conference'])) { $_GET['conference'] = "All"; }
  if(!isset($_GET['division'])) { $_GET['division'] = "All"; } }
 if(!isset($_GET['act'])) { $_GET['act'] = "view"; }
-if($_GET['act']!="view" && $_GET['act']!="games" && $_GET['act']!="stats") { $_GET['act'] = "view"; }
+if($_GET['act']!="view" && $_GET['act']!="games" && $_GET['act']!="stats" && $_GET['act']!="calendar") { $_GET['act'] = "view"; }
 $sqldb = new SQLite3("../hockey15-16.db3");
 $sqldb->exec("PRAGMA encoding = \"UTF-8\";");
 $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
+if($_GET['act']=="calendar") {
+if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==8) {
+ $SelectWhere = "WHERE Date=".$sqldb->escapeString($_GET['date'])." ";
+ $SelectWhereNext = true; }
+if(!isset($_GET['month']) || !is_numeric($_GET['month']) or !strlen($_GET['month'])==2) {
+ $_GET['month'] = gmdate("m"); }
+if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])==2) {
+ if(!isset($_GET['year']) || !is_numeric($_GET['year']) || strlen($_GET['year'])<4) {
+  $_GET['year'] = gmdate("Y"); }
+ $startday = $_GET['year'].$_GET['month']."01";
+ $endday = $_GET['year'].$_GET['month']."31"; }
+$curtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
+$weekdaystart = intval(date("w", $curtimestamp));
+$numofdays = intval(date("t", $curtimestamp));
+$endtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), $numofdays, intval($_GET['year']));
+$weekdayend = intval(date("w", $endtimestamp));
+$monthonly = date("F", $curtimestamp);
+$yearonly = date("Y", $curtimestamp);
+$monthyear = $monthonly." ".$yearonly;
+$daycount = 1;
+$daynextcount = 1;
+echo "<table style=\"width: 100%;\">\n";
+echo "<tr><th colspan=\"7\">".$monthyear."</th></tr>";
+echo "<tr><td style=\"width: 14%;\">Sunday</td><td style=\"width: 14%;\">Monday</td><td style=\"width: 14%;\">Tuesday</td><td style=\"width: 14%;\">Wednesday</td><td style=\"width: 14%;\">Thursday</td><td style=\"width: 14%;\">Friday</td><td style=\"width: 14%;\">Saturday</td></tr>";
+while($daynextcount <= $weekdaystart) {
+ if($daynextcount==1) { echo "<tr>"; }
+ echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
+ $daynextcount += 1; }
+while($daycount <= $numofdays) {
+ $daycheck = $daycount;
+ if(strlen($daycount)==1) { $daycheck = "0".$daycount; }
+ $prenumofgames = $sqldb->query("SELECT COUNT(*) as count FROM ".$leaguename."Games WHERE Date=".$_GET['year'].$_GET['month'].$daycheck." ORDER BY Date DESC, id DESC");
+ $numofgamesarray = $prenumofgames->fetchArray();
+ $numofgames = intval($numofgamesarray['count']);
+ if($daynextcount==1) { echo "<tr>"; }
+ echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\"><a href=\"html.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a><br /><br /><div style=\"text-align: center;\">".$numofgames." Games</div></td>"; 
+ if($daynextcount==7) { echo "</tr>"; $daynextcount = 0; }
+ $daynextcount += 1; $daycount += 1; }
+while($daynextcount <= 7) {
+ if($daynextcount==1) { echo "<tr>"; }
+ echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
+ if($daynextcount==7) { echo "</tr>"; }
+ $daynextcount += 1; }
+echo "</table>"; }
 if($_GET['act']=="view") {
 $SelectWhere = "";
 $SelectWhereNext = false;

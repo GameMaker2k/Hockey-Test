@@ -15,8 +15,8 @@ header("Pragma: private, no-cache, no-store, must-revalidate, pre-check=0, post-
 header("Date: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
-$leaguename = "NHL";
-$fullurl = "http://localhost/hockey/nhl/";
+$leaguename = "ECHL";
+$fullurl = "http://localhost/hockey/echl/";
 if(isset($_SERVER['HTTPS'])) {
  $fullurl = "https://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); } 
 if(!isset($_SERVER['HTTPS'])) {
@@ -480,7 +480,7 @@ while($daycount <= $numofdays) {
  $numofgamesarray = $prenumofgames->fetchArray();
  $numofgames = intval($numofgamesarray['count']);
  if($daynextcount==1) { echo "<tr>"; }
- echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\"><a href=\"xml.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a><br /><br /><div style=\"text-align: center;\">".$numofgames." Games</div></td>";
+ echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\">".$daycount."<br /><br /><div style=\"text-align: center;\">".$numofgames." Games</div></td>"; 
  if($daynextcount==7) { echo "</tr>"; $daynextcount = 0; }
  $daynextcount += 1; $daycount += 1; }
 while($daynextcount <= 7) {
