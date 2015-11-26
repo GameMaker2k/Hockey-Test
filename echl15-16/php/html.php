@@ -105,7 +105,7 @@ if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])
  if(!isset($_GET['year']) || !is_numeric($_GET['year']) || strlen($_GET['year'])<4) {
   $_GET['year'] = gmdate("Y"); }
  $startday = $_GET['year'].$_GET['month']."01";
- $endday = $_GET['year'].$_GET['month']."31";
+ $endday = $_GET['year'].$_GET['month']."31"; }
 $curtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
 $weekdaystart = intval(date("w", $curtimestamp));
 $numofdays = intval(date("t", $curtimestamp));
