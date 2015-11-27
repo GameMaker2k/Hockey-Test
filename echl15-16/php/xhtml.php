@@ -159,7 +159,7 @@ while($daycount <= $numofdays) {
 if($daynextcount>1) {
 while($daynextcount <= 7) {
  if($daynextcount==1) { echo "   <tr>\n"; }
- echo "\n    <td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
+ echo "\n    <td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>\n";
  if($daynextcount==7) { echo "   </tr>\n"; }
  $daynextcount += 1; } }
 echo "  </table>\n"; }
