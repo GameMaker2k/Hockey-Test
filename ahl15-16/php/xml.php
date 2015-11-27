@@ -17,6 +17,7 @@ header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 header("Expires: ".gmdate("D, d M Y H:i:s")." GMT");
 $leaguename = "AHL";
 $fullurl = "http://localhost/hockey/ahl/";
+$fileurl = "xml.php";
 if(isset($_SERVER['HTTPS'])) {
  $fullurl = "https://".$_SERVER["SERVER_NAME"].str_replace("//", "/", dirname($_SERVER["SCRIPT_NAME"])."/"); } 
 if(!isset($_SERVER['HTTPS'])) {
@@ -374,8 +375,8 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 </grammar>
 <?php exit(); }
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-echo "<?xml-stylesheet type=\"text/xsl\" href=\"".$fullurl."xml.php?xslt\"?>\n";
-echo "<!DOCTYPE hockey SYSTEM \"".$fullurl."xml.php?dtd\">\n";
+echo "<?xml-stylesheet type=\"text/xsl\" href=\"".$fullurl."".$fileurl."?xslt\"?>\n";
+echo "<!DOCTYPE hockey SYSTEM \"".$fullurl."".$fileurl."?dtd\">\n";
 echo "<hockey league=\"".$leaguename."\">\n\n";
 if(!isset($_GET['act'])&&isset($_GET['view'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['games'])) { $_GET['act'] = "view"; }
@@ -476,7 +477,7 @@ $monthyear = $monthonly." ".$yearonly;
 $daycount = 1;
 $daynextcount = 1;
 echo "  <table style=\"width: 100%;\">\n";
-echo "   <tr>\n    <th colspan=\"7\"><a href=\"xml.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp))."\">".$monthyear."</a></th>\n   </tr>\n";
+echo "   <tr>\n    <th colspan=\"7\"><a href=\"".$fileurl."?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp))."\">".$monthyear."</a></th>\n   </tr>\n";
 echo "   <tr>\n    <td style=\"width: 14%; font-weight: bold;\">Sunday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Monday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Tuesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Wednesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Thursday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Friday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Saturday</td>\n   </tr>\n";
 while($daynextcount <= $weekdaystart) {
  if($daynextcount==1) { echo "   <tr>\n"; }
@@ -496,7 +497,8 @@ while($daycount <= $numofdays) {
   $gamedaystr = $daycount;
   $numgamesstr = "&#xA0;"; }
  if($_GET['year'].$_GET['month'].$daycheck>=$firstgamedate && $_GET['year'].$_GET['month'].$daycheck<=$lastgamedate) {
- $gamedaystr = "<a href=\"xml.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a>";
+ if($numofgames>0) {
+ $gamedaystr = "<a href=\"".$fileurl."?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a>"; }
  if($numofgames==1) { $numgamesstr = "1 Game"; }
  if($numofgames>1) { $numgamesstr = $numofgames." Games"; } }
  if($daynextcount==1) { echo "   <tr>\n"; }
