@@ -444,7 +444,7 @@ $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
 $firstgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=1");
-$lastgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=(SELECT MAX(id) FROM NHLGames)");
+$lastgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=(SELECT MAX(id) FROM ".$leaguename."Games)");
 if($_GET['act']=="calendar") {
 echo "</".strtolower($leaguename).">";
 die(1);

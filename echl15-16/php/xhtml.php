@@ -97,7 +97,7 @@ $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
 $firstgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=1");
-$lastgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=(SELECT MAX(id) FROM NHLGames)");
+$lastgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=(SELECT MAX(id) FROM ".$leaguename."Games)");
 if($_GET['act']=="calendar") {
 if(isset($_GET['date']) && strlen($_GET['date'])==8) {
  if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
