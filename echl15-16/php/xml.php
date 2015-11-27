@@ -473,29 +473,38 @@ $yearonly = date("Y", $curtimestamp);
 $monthyear = $monthonly." ".$yearonly;
 $daycount = 1;
 $daynextcount = 1;
-echo "<table style=\"width: 100%;\">\n";
-echo "<tr><th colspan=\"7\">".$monthyear."</th></tr>";
-echo "<tr><td style=\"width: 14%;\">Sunday</td><td style=\"width: 14%;\">Monday</td><td style=\"width: 14%;\">Tuesday</td><td style=\"width: 14%;\">Wednesday</td><td style=\"width: 14%;\">Thursday</td><td style=\"width: 14%;\">Friday</td><td style=\"width: 14%;\">Saturday</td></tr>";
+echo "  <table style=\"width: 100%;\">\n";
+echo "   <tr>\n    <th colspan=\"7\">".$monthyear."</th>\n   </tr>\n";
+echo "   <tr>\n    <td style=\"width: 14%; font-weight: bold;\">Sunday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Monday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Tuesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Wednesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Thursday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Friday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Saturday</td>\n   </tr>\n";
 while($daynextcount <= $weekdaystart) {
- if($daynextcount==1) { echo "<tr>"; }
- echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
+ if($daynextcount==1) { echo "   <tr>\n"; }
+ echo "    <td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>\n";
  $daynextcount += 1; }
 while($daycount <= $numofdays) {
  $daycheck = $daycount;
  if(strlen($daycount)==1) { $daycheck = "0".$daycount; }
+ $numofgames = 0;
+ if($_GET['year'].$_GET['month'].$daycheck>=$firstgamedate && $_GET['year'].$_GET['month'].$daycheck<=$lastgamedate) {
  $prenumofgames = $sqldb->query("SELECT COUNT(*) as count FROM ".$leaguename."Games WHERE Date=".$_GET['year'].$_GET['month'].$daycheck." ORDER BY Date DESC, id DESC");
  $numofgamesarray = $prenumofgames->fetchArray();
  $numofgames = intval($numofgamesarray['count']);
- if($daynextcount==1) { echo "<tr>"; }
- echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\"><a href=\"xml.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a><br /><br /><div style=\"text-align: center;\">".$numofgames." Games</div></td>";  
- if($daynextcount==7) { echo "</tr>"; $daynextcount = 0; }
+ $numgamesstr = "No Games"; }
+ if($_GET['year'].$_GET['month'].$daycheck<$firstgamedate || $_GET['year'].$_GET['month'].$daycheck>$lastgamedate) {
+  $numgamesstr = "&#xA0;"; }
+ if($_GET['year'].$_GET['month'].$daycheck>=$firstgamedate && $_GET['year'].$_GET['month'].$daycheck<=$lastgamedate) {
+ if($numofgames==1) { $numgamesstr = "1 Game"; }
+ if($numofgames>1) { $numgamesstr = $numofgames." Games"; } }
+ if($daynextcount==1) { echo "   <tr>\n"; }
+ echo "    <td style=\"width: 14%; height: 100px; vertical-align: top;\"><a href=\"html.php?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a><br /><br /><div style=\"text-align: center;\">".$numgamesstr."</div></td>\n"; 
+ if($daynextcount==7) { echo "   </tr>\n"; $daynextcount = 0; }
  $daynextcount += 1; $daycount += 1; }
+if($daynextcount>1) {
 while($daynextcount <= 7) {
- if($daynextcount==1) { echo "<tr>"; }
- echo "<td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
- if($daynextcount==7) { echo "</tr>"; }
- $daynextcount += 1; }
-echo "</table>"; }
+ if($daynextcount==1) { echo "   <tr>\n"; }
+ echo "\n    <td style=\"width: 14%; height: 100px; vertical-align: top;\">&#xA0;</td>";
+ if($daynextcount==7) { echo "   </tr>\n"; }
+ $daynextcount += 1; } }
+echo "  </table>\n"; }
 if($_GET['act']=="view") {
 $SelectWhere = "";
 $SelectWhereNext = false;
