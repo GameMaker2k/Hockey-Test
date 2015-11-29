@@ -99,6 +99,8 @@ $sqldb->exec("PRAGMA foreign_keys = 1;");
 $sqlite_games_string = "";
 $firstgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=1");
 $lastgamedate = $sqldb->querySingle("SELECT Date FROM ".$leaguename."Games WHERE id=(SELECT MAX(id) FROM ".$leaguename."Games)");
+if($lastgamedate<gmdate("Y").gmdate("m").gmdate("d")) {
+ $lastgamedate = gmdate("Y").gmdate("m").gmdate("d"); }
 if($_GET['act']=="calendar") {
 if(isset($_GET['date']) && strlen($_GET['date'])==8) {
  if(!isset($_GET['month']) || !is_numeric($_GET['month'])) {
@@ -118,17 +120,17 @@ if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])
  $startday = $_GET['year'].$_GET['month']."01";
  $endday = $_GET['year'].$_GET['month']."31"; }
 $curtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
-$weekdaystart = intval(date("w", $curtimestamp));
-$numofdays = intval(date("t", $curtimestamp));
+$weekdaystart = intval(gmdate("w", $curtimestamp));
+$numofdays = intval(gmdate("t", $curtimestamp));
 $endtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), $numofdays, intval($_GET['year']));
-$weekdayend = intval(date("w", $endtimestamp));
-$monthonly = date("F", $curtimestamp);
-$yearonly = date("Y", $curtimestamp);
+$weekdayend = intval(gmdate("w", $endtimestamp));
+$monthonly = gmdate("F", $curtimestamp);
+$yearonly = gmdate("Y", $curtimestamp);
 $monthyear = $monthonly." ".$yearonly;
 $daycount = 1;
 $daynextcount = 1;
 echo "  <table style=\"width: 100%;\">\n";
-echo "   <tr>\n    <th colspan=\"7\"><a href=\"".$fileurl."?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp))."\">".$monthyear."</a></th>\n   </tr>\n";
+echo "   <tr>\n    <th colspan=\"7\"><a href=\"".$fileurl."?games&amp;date=".urlencode(gmdate("Y", $curtimestamp).gmdate("m", $curtimestamp))."\">".$monthyear."</a></th>\n   </tr>\n";
 echo "   <tr>\n    <td style=\"width: 14%; font-weight: bold;\">Sunday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Monday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Tuesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Wednesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Thursday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Friday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Saturday</td>\n   </tr>\n";
 while($daynextcount <= $weekdaystart) {
  if($daynextcount==1) { echo "   <tr>\n"; }
@@ -149,7 +151,7 @@ while($daycount <= $numofdays) {
   $numgamesstr = "&#xA0;"; }
  if($_GET['year'].$_GET['month'].$daycheck>=$firstgamedate && $_GET['year'].$_GET['month'].$daycheck<=$lastgamedate) {
  if($numofgames>0) {
- $gamedaystr = "<a href=\"".$fileurl."?games&amp;date=".urlencode(date("Y", $curtimestamp).date("m", $curtimestamp).$daycheck)."\">".$daycount."</a>"; }
+ $gamedaystr = "<a href=\"".$fileurl."?games&amp;date=".urlencode(gmdate("Y", $curtimestamp).gmdate("m", $curtimestamp).$daycheck)."\">".$daycount."</a>"; }
  if($numofgames==1) { $numgamesstr = "1 Game"; }
  if($numofgames>1) { $numgamesstr = $numofgames." Games"; } }
  if($daynextcount==1) { echo "   <tr>\n"; }
