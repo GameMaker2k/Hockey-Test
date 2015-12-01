@@ -474,7 +474,8 @@ if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])
  if(!isset($_GET['year']) || !is_numeric($_GET['year']) || strlen($_GET['year'])<4) {
   $_GET['year'] = gmdate("Y"); }
  $startday = $_GET['year'].$_GET['month']."01";
- $endday = $_GET['year'].$_GET['month']."31"; }
+ $tmplastdaymonth = gmdate("t", gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
+ $endday = $_GET['year'].$_GET['month'].$tmplastdaymonth; }
 $curtimestamp = gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
 $weekdaystart = intval(gmdate("w", $curtimestamp));
 $numofdays = intval(gmdate("t", $curtimestamp));
@@ -553,7 +554,8 @@ if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==6
  $getyear = substr($_GET['date'], 0, 4);
  $getmonth = substr($_GET['date'], 4, 2);
  $startday = $getyear.$getmonth."01";
- $endday = $getyear.$getmonth."31";
+ $tmplastdaymonth = gmdate("t", gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
+ $endday = $getyear.$getmonth.$tmplastdaymonth;
  $SelectWhere = "WHERE (Date>=".$sqldb->escapeString($startday)." AND Date<=".$sqldb->escapeString($endday).") ";
  $SelectWhereNext = true; }
 if(!isset($_GET['month']) || !is_numeric($_GET['month']) or !strlen($_GET['month'])==2) {
@@ -562,7 +564,8 @@ if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])
  if(!isset($_GET['year']) || !is_numeric($_GET['year']) || strlen($_GET['year'])<4) {
   $_GET['year'] = gmdate("Y"); }
  $startday = $_GET['year'].$_GET['month']."01";
- $endday = $_GET['year'].$_GET['month']."31";
+ $tmplastdaymonth = gmdate("t", gmmktime(12, 30, 0, intval($_GET['month']), 1, intval($_GET['year']));
+ $endday = $_GET['year'].$_GET['month'].$tmplastdaymonth;
  $SelectWhere = "WHERE (Date>=".$sqldb->escapeString($startday)." AND Date<=".$sqldb->escapeString($endday).") ";
  $SelectWhereNext = true; }
 if(isset($_GET['team'])) {
