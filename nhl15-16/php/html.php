@@ -34,6 +34,12 @@ if(!isset($_GET['act'])&&isset($_GET['view'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['games'])) { $_GET['act'] = "view"; }
 if(!isset($_GET['act'])&&isset($_GET['stats'])) { $_GET['act'] = "stats"; }
 if(!isset($_GET['act'])&&isset($_GET['calendar'])) { $_GET['act'] = "calendar"; }
+if(!isset($_GET['order'])&&isset($_GET['asc'])) { $_GET['order'] = "ascending"; }
+if(isset($_GET['order'])&&$_GET['order']=="asc") { $_GET['order'] = "ascending"; }
+if(!isset($_GET['order'])&&isset($_GET['ascending'])) { $_GET['order'] = "ascending"; }
+if(!isset($_GET['order'])&&isset($_GET['desc'])) { $_GET['order'] = "descending"; }
+if(isset($_GET['order'])&&$_GET['order']=="desc") { $_GET['order'] = "descending"; }
+if(!isset($_GET['order'])&&isset($_GET['descending'])) { $_GET['order'] = "descending"; }
 if(isset($_GET['month']) && strlen($_GET['month'])==1) {
  $_GET['month'] = "0".$_GET['month']; }
 if(isset($_GET['day']) && strlen($_GET['day'])==1) {
@@ -192,6 +198,13 @@ $SelectWhereNext = false;
 if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==8) {
  $SelectWhere = "WHERE Date=".$sqldb->escapeString($_GET['date'])." ";
  $SelectWhereNext = true; }
+if(isset($_GET['date']) && is_numeric($_GET['date']) && strlen($_GET['date'])==6) {
+ $getyear = substr($_GET['date'], 0, 4);
+ $getmonth = substr($_GET['date'], 4, 2);
+ $startday = $getyear.$getmonth."01";
+ $endday = $getyear.$getmonth."31";
+ $SelectWhere = "WHERE (Date>=".$sqldb->escapeString($startday)." AND Date<=".$sqldb->escapeString($endday).") ";
+ $SelectWhereNext = true; }
 if(!isset($_GET['month']) || !is_numeric($_GET['month']) or !strlen($_GET['month'])==2) {
  $_GET['month'] = gmdate("m"); }
 if(!isset($_GET['date']) && is_numeric($_GET['month']) && strlen($_GET['month'])==2) {
@@ -207,7 +220,11 @@ if(isset($_GET['team'])) {
  if($SelectWhereNext==false) {
   $SelectWhere = "WHERE (HomeTeam='".$sqldb->escapeString($_GET['team'])."' OR AwayTeam='".$sqldb->escapeString($_GET['team'])."') ";
   $SelectWhereNext = true; } }
-$results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY Date DESC, id DESC");
+if(!isset($_GET['order'])) { $_GET['order'] = "descending"; }
+if($_GET['order']=="asc" || $_GET['order']=="ascending") {
+ $results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY Date ASC, id ASC"); }
+if($_GET['order']=="desc" || $_GET['order']=="descending") {
+ $results = $sqldb->query("SELECT * FROM ".$leaguename."Games ".$SelectWhere."ORDER BY Date DESC, id DESC"); }
 echo "<table style=\"width: 100%;\">\n";
 while ($row = $results->fetchArray()) {
     $toneres = $sqldb->querySingle("SELECT CityName, TeamName, FullName FROM ".$leaguename."Teams WHERE FullName='".$sqldb->escapeString($row['HomeTeam'])."'", true);
