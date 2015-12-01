@@ -478,8 +478,30 @@ $yearonly = gmdate("Y", $curtimestamp);
 $monthyear = $monthonly." ".$yearonly;
 $daycount = 1;
 $daynextcount = 1;
+$prevmonth = intval($_GET['month']);
+$prevmonthyear = intval($_GET['year']);
+if($prevmonth<=1) { 
+ $prevmonth = 12;
+ $prevmonthyear -= 1; }
+if($prevmonth>1) {
+ $prevmonth -= 1; }
+$prevmonthstamp = gmmktime(12, 30, 0, intval($prevmonth), 1, intval($prevmonthyear));
+$prevmonthonly = gmdate("F", $prevmonthstamp);
+$prevyearonly = gmdate("Y", $prevmonthstamp);
+$prevmonthyear = $prevmonthonly." ".$prevyearonly;
+$nextmonth = intval($_GET['month']);
+$nextmonthyear = intval($_GET['year']);
+if($nextmonth>=12) { 
+ $nextmonth = 1;
+ $nextmonthyear += 1; }
+if($nextmonth<12) { 
+ $nextmonth += 1; }
+$nextmonthstamp = gmmktime(12, 30, 0, intval($nextmonth), 1, intval($nextmonthyear));
+$nextmonthonly = gmdate("F", $nextmonthstamp);
+$nextyearonly = gmdate("Y", $nextmonthstamp);
+$nextmonthyear = $nextmonthonly." ".$nextyearonly;
 echo "  <table style=\"width: 100%;\">\n";
-echo "   <tr>\n    <th colspan=\"7\"><a href=\"".$fileurl."?games&amp;date=".urlencode(gmdate("Y", $curtimestamp).gmdate("m", $curtimestamp))."\">".$monthyear."</a></th>\n   </tr>\n";
+echo "   <tr>\n    <th><a href=\"".$fileurl."?calendar&amp;date=".urlencode(gmdate("Y", $prevmonthstamp).gmdate("m", $prevmonthstamp))."\">".$prevmonthyear."</a></th>\n    <th colspan=\"5\"><a href=\"".$fileurl."?games&amp;date=".urlencode(gmdate("Y", $curtimestamp).gmdate("m", $curtimestamp))."\">".$monthyear."</a></th>\n    <th><a href=\"".$fileurl."?calendar&amp;date=".urlencode(gmdate("Y", $nextmonthstamp).gmdate("m", $nextmonthstamp))."\">".$nextmonthyear."</a></th>\n   </tr>\n";
 echo "   <tr>\n    <td style=\"width: 14%; font-weight: bold;\">Sunday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Monday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Tuesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Wednesday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Thursday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Friday</td>\n    <td style=\"width: 14%; font-weight: bold;\">Saturday</td>\n   </tr>\n";
 while($daynextcount <= $weekdaystart) {
  if($daynextcount==1) { echo "   <tr>\n"; }
