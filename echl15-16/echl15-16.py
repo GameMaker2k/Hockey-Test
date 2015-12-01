@@ -181,9 +181,9 @@ sqlcur.execute("CREATE TABLE "+leaguename+"Arenas(id INTEGER PRIMARY KEY, CityNa
 sqlcon.commit();
 
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Teams");
-sqlcur.execute("CREATE TABLE "+leaguename+"Teams(id INTEGER PRIMARY KEY, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Teams(id INTEGER PRIMARY KEY, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Stats");
-sqlcur.execute("CREATE TABLE "+leaguename+"Stats(id INTEGER PRIMARY KEY, TeamID  INTEGER, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Stats(id INTEGER PRIMARY KEY, TeamID  INTEGER, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
 sqlcon.commit();
 
 def MakeHockeyTeams(sqldatacon, cityname, areaname, teamname, conference, division, arenaname, teamnameprefix):
@@ -368,6 +368,12 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  UpdateTeamData(sqldatacon, awayteam, "SOGFor", int(teamssog[1]), "+");
  UpdateTeamData(sqldatacon, awayteam, "SOGAgainst", int(teamssog[0]), "+");
  UpdateTeamData(sqldatacon, awayteam, "SOGDifference", int(int(teamssog[1]) - int(teamssog[0])), "+");
+ if(winningteam==hometeam and teamscores[1]==0):
+  UpdateTeamData(sqldatacon, hometeam, "ShutoutWins", 1, "+");
+  UpdateTeamData(sqldatacon, awayteam, "ShutoutLosses", 1, "+");
+ if(winningteam==awayteam and teamscores[0]==0):
+  UpdateTeamData(sqldatacon, awayteam, "ShutoutWins", 1, "+");
+  UpdateTeamData(sqldatacon, hometeam, "ShutoutLosses", 1, "+");
  UpdateTeamDataString(sqldatacon, winningteam, "LastTen", GetLastTenGames(sqldatacon, winningteamname));
  UpdateTeamDataString(sqldatacon, losingteam, "LastTen", GetLastTenGames(sqldatacon, losingteamname));
  GetWinningStreak = GetTeamData(sqldatacon, winningteam, "Streak", "str");
