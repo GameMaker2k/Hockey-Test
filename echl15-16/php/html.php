@@ -138,22 +138,22 @@ $daycount = 1;
 $daynextcount = 1;
 $prevmonth = intval($_GET['month']);
 $prevmonthyear = intval($_GET['year']);
+if($prevmonth>1) {
+ $prevmonth -= 1; }
 if($prevmonth<=1) { 
  $prevmonth = 12;
  $prevmonthyear -= 1; }
-if($prevmonth>1) {
- $prevmonth -= 1; }
 $prevmonthstamp = gmmktime(12, 30, 0, intval($prevmonth), 1, intval($prevmonthyear));
 $prevmonthonly = gmdate("F", $prevmonthstamp);
 $prevyearonly = gmdate("Y", $prevmonthstamp);
 $prevmonthyear = $prevmonthonly." ".$prevyearonly;
 $nextmonth = intval($_GET['month']);
 $nextmonthyear = intval($_GET['year']);
+if($nextmonth<12) { 
+ $nextmonth += 1; }
 if($nextmonth>=12) { 
  $nextmonth = 1;
  $nextmonthyear += 1; }
-if($nextmonth<12) { 
- $nextmonth += 1; }
 $nextmonthstamp = gmmktime(12, 30, 0, intval($nextmonth), 1, intval($nextmonthyear));
 $nextmonthonly = gmdate("F", $nextmonthstamp);
 $nextyearonly = gmdate("Y", $nextmonthstamp);
