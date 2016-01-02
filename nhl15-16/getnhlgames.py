@@ -22,6 +22,11 @@ if(len(sys.argv) > 3):
 if(len(sys.argv) > 4):
  getendyear = sys.argv[4];
 
+if(int(getformonth)>=10):
+ getforcuryear = getforyear;
+if(int(getformonth)<=9):
+ getforcuryear = getendyear;
+
 def GetFull2Team(sqldatacon, TeamName):
  global leaguename;
  return str(sqldatacon[0].execute("SELECT TeamName FROM "+leaguename+"Teams WHERE FullName=\""+str(TeamName)+"\"").fetchone()[0]);
@@ -32,9 +37,9 @@ def GetTeam2Full(sqldatacon, TeamName):
 
 geturls_cj = cookielib.CookieJar();
 geturls_opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(geturls_cj));
-geturls_opener.addheaders = [("Referer", "http://theahl.com/"), ("User-Agent", useragent), ("Accept-Encoding", "gzip, deflate"), ("Accept-Language", "en-US,en;q=0.8,en-CA,en-GB;q=0.6"), ("Accept-Charset", "ISO-8859-1,ISO-8859-15,utf-8;q=0.7,*;q=0.7"), ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"), ("Connection", "close")];
+geturls_opener.addheaders = [("Referer", "http://www.nhl.com/"), ("User-Agent", useragent), ("Accept-Encoding", "gzip, deflate"), ("Accept-Language", "en-US,en;q=0.8,en-CA,en-GB;q=0.6"), ("Accept-Charset", "ISO-8859-1,ISO-8859-15,utf-8;q=0.7,*;q=0.7"), ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"), ("Connection", "close")];
 urllib2.install_opener(geturls_opener);
-geturls_text = geturls_opener.open("http://www.nhl.com/ice/schedulebyday.htm?date="+getformonth+"/"+getforday+"/"+getforyear+"&season="+getforyear+getendyear);
+geturls_text = geturls_opener.open("http://www.nhl.com/ice/schedulebyday.htm?date="+getformonth+"/"+getforday+"/"+getforcuryear+"&season="+getforyear+getendyear);
 if(geturls_text.info().get("Content-Encoding")=="gzip" or geturls_text.info().get("Content-Encoding")=="deflate"):
  strbuf = StringIO.StringIO(geturls_text.read());
  gzstrbuf = gzip.GzipFile(fileobj=strbuf);
@@ -46,7 +51,7 @@ get_todays_games = re.findall(pre_get_todays_games, prehockey_text);
 num_todays_games = len(get_todays_games);
 cur_todays_games = 0;
 if(num_todays_games>0):
- print("print(\"Inserting \"+leaguename+\" Game Data From "+getformonth+"/"+getforday+"/"+getforyear+".\\n\");");
+ print("print(\"Inserting \"+leaguename+\" Game Data From "+getformonth+"/"+getforday+"/"+getforcuryear+".\\n\");");
 while(cur_todays_games<num_todays_games):
  newgetforday = getforday;
  if(len(getforday)==1):
@@ -55,7 +60,7 @@ while(cur_todays_games<num_todays_games):
  if(len(getformonth)==1):
   newgetformonth = "0"+getformonth;
  geturls_opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(geturls_cj));
- geturls_opener.addheaders = [("Referer", "http://www.nhl.com/ice/schedulebyday.htm?date="+getformonth+"/"+getforday+"/"+getforyear+"&season="+getforyear+getendyear), ("User-Agent", useragent), ("Accept-Encoding", "gzip, deflate"), ("Accept-Language", "en-US,en;q=0.8,en-CA,en-GB;q=0.6"), ("Accept-Charset", "ISO-8859-1,ISO-8859-15,utf-8;q=0.7,*;q=0.7"), ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"), ("Connection", "close")];
+ geturls_opener.addheaders = [("Referer", "http://www.nhl.com/ice/schedulebyday.htm?date="+getformonth+"/"+getforday+"/"+getforcuryear+"&season="+getforyear+getendyear), ("User-Agent", useragent), ("Accept-Encoding", "gzip, deflate"), ("Accept-Language", "en-US,en;q=0.8,en-CA,en-GB;q=0.6"), ("Accept-Charset", "ISO-8859-1,ISO-8859-15,utf-8;q=0.7,*;q=0.7"), ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"), ("Connection", "close")];
  urllib2.install_opener(geturls_opener);
  geturls_text = geturls_opener.open("http://www.nhl.com/gamecenter/en/boxscore?id="+get_todays_games[cur_todays_games]);
  if(geturls_text.info().get("Content-Encoding")=="gzip" or geturls_text.info().get("Content-Encoding")=="deflate"):
@@ -84,11 +89,11 @@ while(cur_todays_games<num_todays_games):
  pre_team_stats = re.escape("colspan=\"1\" rowspan=\"1\" class=\"")+"((a|h)[a-zA-Z]+)"+re.escape("\">")+"([0-9\/]+)"+re.escape("</td>");
  get_team_stats = re.findall(pre_team_stats, curgame_text);
  if(numpers==3):
-  print("MakeHockeyGame((sqlcur, sqlcon), "+getforyear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+"\", 0, False);");
+  print("MakeHockeyGame((sqlcur, sqlcon), "+getforcuryear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+"\", 0, False);");
  if(numpers==4):
-  print("MakeHockeyGame((sqlcur, sqlcon), "+getforyear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+","+curgame_otscore_text[1]+":"+curgame_otscore_text[0]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+","+home_team_shots[3]+":"+away_team_shots[3]+"\", 0, False);");
+  print("MakeHockeyGame((sqlcur, sqlcon), "+getforcuryear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+","+curgame_otscore_text[1]+":"+curgame_otscore_text[0]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+","+home_team_shots[3]+":"+away_team_shots[3]+"\", 0, False);");
  if(numpers==5):
-  print("MakeHockeyGame((sqlcur, sqlcon), "+getforyear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+","+curgame_otscore_text[1]+":"+curgame_otscore_text[0]+","+curgame_soscore_text[1][0]+":"+curgame_soscore_text[0][0]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+","+home_team_shots[3]+":"+away_team_shots[3]+"\", 0, False);");
+  print("MakeHockeyGame((sqlcur, sqlcon), "+getforcuryear+newgetformonth+newgetforday+", \""+team_text[1][0]+"\", \""+team_text[0][0]+"\", \""+curgame_score_text[3][1]+":"+curgame_score_text[0][1]+","+curgame_score_text[4][1]+":"+curgame_score_text[1][1]+","+curgame_score_text[5][1]+":"+curgame_score_text[2][1]+","+curgame_otscore_text[1]+":"+curgame_otscore_text[0]+","+curgame_soscore_text[1][0]+":"+curgame_soscore_text[0][0]+"\", \""+home_team_shots[0]+":"+away_team_shots[0]+","+home_team_shots[1]+":"+away_team_shots[1]+","+home_team_shots[2]+":"+away_team_shots[2]+","+home_team_shots[3]+":"+away_team_shots[3]+"\", 0, False);");
  cur_todays_games = cur_todays_games + 1;
 
 sqlcon.close();

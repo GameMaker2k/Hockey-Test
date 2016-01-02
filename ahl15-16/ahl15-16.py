@@ -261,6 +261,14 @@ def GetTeam2Num(sqldatacon, TeamName):
  global leaguename;
  return int(sqldatacon[0].execute("SELECT id FROM "+leaguename+"Teams WHERE FullName=\""+str(TeamName)+"\"").fetchone()[0]);
 
+def GetNum2Arena(sqldatacon, ArenaNum, ReturnVar):
+ global leaguename;
+ return str(sqldatacon[0].execute("SELECT "+ReturnVar+" FROM "+leaguename+"Arenas WHERE id="+str(ArenaNum)).fetchone()[0]);
+
+def GetArena2Num(sqldatacon, ArenaName):
+ global leaguename;
+ return int(sqldatacon[0].execute("SELECT id FROM "+leaguename+"Arenas WHERE FullArenaName=\""+str(ArenaName)+"\"").fetchone()[0]);
+
 print("DONE! All Team Data Inserted.");
 
 print("Creating "+leaguename+" Game Table.");
@@ -322,6 +330,11 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  if(atarena==0):
   atarena = hometeam;
   atarenaname = GetTeamData(sqldatacon, hometeam, "FullArenaName", "str");
+ if(isinstance(atarena, int) and atarena>0):
+  atarenaname = GetNum2Arena(sqldatacon, atarena, "FullArenaName");
+ if(isinstance(atarena, str)):
+  atarenaname = atarena;
+  atarena = GetArena2Num(sqldatacon, atarenaname);
  print("Home Arena: "+str(atarenaname));
  print("Home Team: "+GetNum2Team(sqldatacon, int(hometeam), "FullName"));
  print("Home Period Scores:"+homeperiodscore);
