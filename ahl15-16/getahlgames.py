@@ -43,7 +43,7 @@ get_todays_games = re.findall(pre_get_todays_games, prehockey_text);
 num_todays_games = len(get_todays_games);
 cur_todays_games = 0;
 if(num_todays_games>0):
- print("print(\"Inserting \"+leaguename+\" Game Data From "+getformonth+"/"+getforday+"/"+getforyear+".\\n\");");
+ print("print(\"Inserting \"+leaguename+\" Game Data From "+getformonth.lstrip('0')+"/"+getforday.lstrip('0')+"/"+getforyear+".\\n\");");
 while(cur_todays_games<num_todays_games):
  newgetforday = getforday;
  if(len(getforday)==1):
