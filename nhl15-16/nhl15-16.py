@@ -180,12 +180,12 @@ sqlcur.execute("CREATE TABLE "+leaguename+"Arenas(id INTEGER PRIMARY KEY, CityNa
 sqlcon.commit();
 
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Teams");
-sqlcur.execute("CREATE TABLE "+leaguename+"Teams(id INTEGER PRIMARY KEY, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Teams(id INTEGER PRIMARY KEY, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, Affiliates TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Stats");
-sqlcur.execute("CREATE TABLE "+leaguename+"Stats(id INTEGER PRIMARY KEY, TeamID  INTEGER, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Stats(id INTEGER PRIMARY KEY, TeamID  INTEGER, Date INTEGER, FullName TEXT, CityName TEXT, TeamPrefix TEXT, AreaName TEXT, FullCityName TEXT, TeamName TEXT, Conference TEXT, Division TEXT, ArenaName TEXT, FullArenaName TEXT, Affiliates TEXT, GamesPlayed INTEGER, GamesPlayedHome INTEGER, GamesPlayedAway INTEGER, Wins INTEGER, OTWins INTEGER, SOWins INTEGER, OTSOWins INTEGER, TWins INTEGER, Losses INTEGER, OTLosses INTEGER, SOLosses INTEGER, OTSOLosses INTEGER, TLosses INTEGER, ROW INTEGER, ROT INTEGER, ShutoutWins INTEGER, ShutoutLosses INTEGER, HomeRecord TEXT, AwayRecord TEXT, Shootouts TEXT, GoalsFor INTEGER, GoalsAgainst INTEGER, GoalsDifference INTEGER, SOGFor INTEGER, SOGAgainst INTEGER, SOGDifference INTEGER, Points INTEGER, PCT REAL, LastTen TEXT, Streak TEXT)");
 sqlcon.commit();
 
-def MakeHockeyTeams(sqldatacon, cityname, areaname, teamname, conference, division, arenaname, teamnameprefix):
+def MakeHockeyTeams(sqldatacon, cityname, areaname, teamname, conference, division, arenaname, teamnameprefix, teamaffiliates):
  global leaguename;
  print("Team Name: "+teamname);
  print("Arena Name: "+arenaname);
@@ -195,8 +195,8 @@ def MakeHockeyTeams(sqldatacon, cityname, areaname, teamname, conference, divisi
  print("Conference: "+conference);
  print("Division: "+division);
  print(" ");
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Teams(Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) VALUES(\"20151001\", \""+str(teamnameprefix+" "+teamname)+"\", \""+str(cityname)+"\", \""+str(teamnameprefix)+"\", \""+str(areaname)+"\", \""+str(cityname+", "+areaname)+"\", \""+str(teamname)+"\", \""+str(conference)+"\", \""+str(division)+"\", \""+str(arenaname)+"\", \""+str(arenaname+", "+cityname)+"\", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \"0:0:0\", \"0:0:0\", \"0:0\", 0, 0, 0, 0, 0, 0, 0, 0, \"0:0:0\", \"None\")");
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+teamnameprefix+" "+teamname+"\";");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Teams(Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) VALUES(\"20151001\", \""+str(teamnameprefix+" "+teamname)+"\", \""+str(cityname)+"\", \""+str(teamnameprefix)+"\", \""+str(areaname)+"\", \""+str(cityname+", "+areaname)+"\", \""+str(teamname)+"\", \""+str(conference)+"\", \""+str(division)+"\", \""+str(arenaname)+"\", \""+str(arenaname+", "+cityname)+"\", \""+str(teamaffiliates)+"\", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \"0:0:0\", \"0:0:0\", \"0:0\", 0, 0, 0, 0, 0, 0, 0, 0, \"0:0:0\", \"None\")");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+teamnameprefix+" "+teamname+"\";");
  sqldatacon[0].execute("INSERT INTO "+leaguename+"Arenas(CityName, AreaName, FullCityName, ArenaName, FullArenaName, GamesPlayed) VALUES(\""+str(cityname)+"\", \""+str(areaname)+"\", \""+str(cityname+", "+areaname)+"\", \""+str(arenaname)+"\", \""+str(arenaname+", "+cityname)+"\", 0)");
  UpdateConferenceData((sqlcur, sqlcon), conference, "NumberOfTeams", 1, "+");
  UpdateDivisionData((sqlcur, sqlcon), division, "NumberOfTeams", 1, "+");
@@ -213,43 +213,43 @@ def MakeHockeyArena(sqldatacon, cityname, areaname, arenaname, teamnameprefix):
 
 print("Inserting "+leaguename+" Teams From Eastern Conference.");
 print("Inserting "+leaguename+" Teams From Atlantic Division.\n");
-MakeHockeyTeams((sqlcur, sqlcon), "Boston", "MA", "Bruins", "Eastern", "Atlantic", "TD Garden", "Boston");
-MakeHockeyTeams((sqlcur, sqlcon), "Buffalo", "NY", "Sabres", "Eastern", "Atlantic", "First Niagara Center", "Buffalo");
-MakeHockeyTeams((sqlcur, sqlcon), "Detroit", "MI", "Red Wings", "Eastern", "Atlantic", "Joe Louis Arena", "Detroit");
-MakeHockeyTeams((sqlcur, sqlcon), "Sunrise", "FL", "Panthers", "Eastern", "Atlantic", "BB&T Center", "Florida");
-MakeHockeyTeams((sqlcur, sqlcon), "Montreal", "QC", "Canadiens", "Eastern", "Atlantic", "Bell Centre", "Montreal");
-MakeHockeyTeams((sqlcur, sqlcon), "Ottawa", "ON", "Senators", "Eastern", "Atlantic", "Canadian Tire Centre", "Ottawa");
-MakeHockeyTeams((sqlcur, sqlcon), "Tampa Bay", "FL", "Lightning", "Eastern", "Atlantic", "Amalie Arena", "Tampa Bay");
-MakeHockeyTeams((sqlcur, sqlcon), "Toronto", "ON", "Maple Leafs", "Eastern", "Atlantic", "Air Canada Centre", "Toronto");
+MakeHockeyTeams((sqlcur, sqlcon), "Boston", "MA", "Bruins", "Eastern", "Atlantic", "TD Garden", "Boston", "ECHL:Atlanta Gladiators,AHL:Providence Bruins");
+MakeHockeyTeams((sqlcur, sqlcon), "Buffalo", "NY", "Sabres", "Eastern", "Atlantic", "First Niagara Center", "Buffalo", "ECHL:Elmira Jackals,AHL:Rochester Americans ");
+MakeHockeyTeams((sqlcur, sqlcon), "Detroit", "MI", "Red Wings", "Eastern", "Atlantic", "Joe Louis Arena", "Detroit", "ECHL:Toledo Walleye,AHL:Grand Rapids Griffins ");
+MakeHockeyTeams((sqlcur, sqlcon), "Sunrise", "FL", "Panthers", "Eastern", "Atlantic", "BB&T Center", "Florida", "ECHL:None,AHL:Portland Pirates");
+MakeHockeyTeams((sqlcur, sqlcon), "Montreal", "QC", "Canadiens", "Eastern", "Atlantic", "Bell Centre", "Montreal", "ECHL:Brampton Beast,AHL:St. John's Icecaps");
+MakeHockeyTeams((sqlcur, sqlcon), "Ottawa", "ON", "Senators", "Eastern", "Atlantic", "Canadian Tire Centre", "Ottawa", "ECHL:Evansville IceMen,AHL:Binghamton Senators");
+MakeHockeyTeams((sqlcur, sqlcon), "Tampa Bay", "FL", "Lightning", "Eastern", "Atlantic", "Amalie Arena", "Tampa Bay", "ECHL:None,AHL:Syracuse Crunch");
+MakeHockeyTeams((sqlcur, sqlcon), "Toronto", "ON", "Maple Leafs", "Eastern", "Atlantic", "Air Canada Centre", "Toronto", "ECHL:Orlando Solar Bears,AHL:Toronto Marlies");
 
 print("Inserting "+leaguename+" Teams From Metropolitan Division.\n");
-MakeHockeyTeams((sqlcur, sqlcon), "Carolina", "NC", "Hurricanes", "Eastern", "Metropolitan", "PNC Arena", "Carolina");
-MakeHockeyTeams((sqlcur, sqlcon), "Columbus", "OH", "Blue Jackets", "Eastern", "Metropolitan", "Nationwide Arena", "Columbus");
-MakeHockeyTeams((sqlcur, sqlcon), "New Jersey", "NJ", "Devils", "Eastern", "Metropolitan", "Prudential Center", "New Jersey");
-MakeHockeyTeams((sqlcur, sqlcon), "New York City", "NY", "Islanders", "Eastern", "Metropolitan", "Barclays Center", "New York");
-MakeHockeyTeams((sqlcur, sqlcon), "New York City", "NY", "Rangers", "Eastern", "Metropolitan", "Madison Square Garden", "New York");
-MakeHockeyTeams((sqlcur, sqlcon), "Philadelphia", "PA", "Flyers", "Eastern", "Metropolitan", "Wells Fargo Center", "Philadelphia");
-MakeHockeyTeams((sqlcur, sqlcon), "Pittsburgh", "PA", "Penguins", "Eastern", "Metropolitan", "Consol Energy Center", "Pittsburgh");
-MakeHockeyTeams((sqlcur, sqlcon), "Washington", "D.C.", "Capitals", "Eastern", "Metropolitan", "Verizon Center", "Washington");
+MakeHockeyTeams((sqlcur, sqlcon), "Carolina", "NC", "Hurricanes", "Eastern", "Metropolitan", "PNC Arena", "Carolina", "ECHL:Florida Everblades,AHL:Charlotte Checkers");
+MakeHockeyTeams((sqlcur, sqlcon), "Columbus", "OH", "Blue Jackets", "Eastern", "Metropolitan", "Nationwide Arena", "Columbus", "ECHL:Kalamazoo Wings,AHL:Lake Erie Monsters");
+MakeHockeyTeams((sqlcur, sqlcon), "New Jersey", "NJ", "Devils", "Eastern", "Metropolitan", "Prudential Center", "New Jersey", "ECHL:None,AHL:Albany Devils");
+MakeHockeyTeams((sqlcur, sqlcon), "New York City", "NY", "Islanders", "Eastern", "Metropolitan", "Barclays Center", "New York", "ECHL:Missouri Mavericks,AHL:Bridgeport Sound Tigers");
+MakeHockeyTeams((sqlcur, sqlcon), "New York City", "NY", "Rangers", "Eastern", "Metropolitan", "Madison Square Garden", "New York", "ECHL:Greenville Swamp Rabbits,AHL:Hartford Wolf Pack");
+MakeHockeyTeams((sqlcur, sqlcon), "Philadelphia", "PA", "Flyers", "Eastern", "Metropolitan", "Wells Fargo Center", "Philadelphia", "ECHL:Reading Royals,AHL:Lehigh Valley Phantoms");
+MakeHockeyTeams((sqlcur, sqlcon), "Pittsburgh", "PA", "Penguins", "Eastern", "Metropolitan", "Consol Energy Center", "Pittsburgh", "ECHL:Wheeling Nailers,AHL:Wilkes-Barre/Scranton Penguins");
+MakeHockeyTeams((sqlcur, sqlcon), "Washington", "D.C.", "Capitals", "Eastern", "Metropolitan", "Verizon Center", "Washington", "ECHL:South Carolina Stingrays,AHL:Hershey Bears");
 
 print("Inserting "+leaguename+" Teams From Western Conference.");
 print("Inserting "+leaguename+" Teams From Central Division.\n");
-MakeHockeyTeams((sqlcur, sqlcon), "Chicago", "IL", "Blackhawks", "Western", "Central", "United Center", "Chicago");
-MakeHockeyTeams((sqlcur, sqlcon), "Denver", "CO", "Avalanche", "Western", "Central", "Pepsi Center", "Colorado");
-MakeHockeyTeams((sqlcur, sqlcon), "Dallas", "TX", "Stars", "Western", "Central", "American Airlines Center", "Dallas");
-MakeHockeyTeams((sqlcur, sqlcon), "St. Paul", "MN", "Wild", "Western", "Central", "Xcel Energy Center", "Minnesota");
-MakeHockeyTeams((sqlcur, sqlcon), "Nashville", "TN", "Predators", "Western", "Central", "Bridgestone Arena", "Nashville");
-MakeHockeyTeams((sqlcur, sqlcon), "St. Louis", "MO", "Blues", "Western", "Central", "Scottrade Center", "St. Louis");
-MakeHockeyTeams((sqlcur, sqlcon), "Winnipeg", "MB", "Jets", "Western", "Central", "MTS Centre", "Winnipeg");
+MakeHockeyTeams((sqlcur, sqlcon), "Chicago", "IL", "Blackhawks", "Western", "Central", "United Center", "Chicago", "ECHL:Indy Fuel,AHL:Rockford IceHogs");
+MakeHockeyTeams((sqlcur, sqlcon), "Denver", "CO", "Avalanche", "Western", "Central", "Pepsi Center", "Colorado", "ECHL:Fort Wayne Komets,AHL:San Antonio Rampage");
+MakeHockeyTeams((sqlcur, sqlcon), "Dallas", "TX", "Stars", "Western", "Central", "American Airlines Center", "Dallas", "ECHL:Idaho Steelheads,AHL:Texas Stars");
+MakeHockeyTeams((sqlcur, sqlcon), "St. Paul", "MN", "Wild", "Western", "Central", "Xcel Energy Center", "Minnesota", "ECHL:Quad City Mallards,AHL:Iowa Wild");
+MakeHockeyTeams((sqlcur, sqlcon), "Nashville", "TN", "Predators", "Western", "Central", "Bridgestone Arena", "Nashville", "ECHL:Cincinnati Cyclones,AHL:Milwaukee Admirals");
+MakeHockeyTeams((sqlcur, sqlcon), "St. Louis", "MO", "Blues", "Western", "Central", "Scottrade Center", "St. Louis", "ECHL:None,AHL:Chicago Wolves");
+MakeHockeyTeams((sqlcur, sqlcon), "Winnipeg", "MB", "Jets", "Western", "Central", "MTS Centre", "Winnipeg", "ECHL:Tulsa Oilers,AHL:Manitoba Moose");
 
 print("Inserting "+leaguename+" Teams From Pacific Division.\n");
-MakeHockeyTeams((sqlcur, sqlcon), "Anaheim", "CA", "Ducks", "Western", "Pacific", "Honda Center", "Anaheim");
-MakeHockeyTeams((sqlcur, sqlcon), "Glendale", "AZ", "Coyotes", "Western", "Pacific", "Gila River Arena", "Arizona");
-MakeHockeyTeams((sqlcur, sqlcon), "Calgary", "AB", "Flames", "Western", "Pacific", "Scotiabank Saddledome", "Calgary");
-MakeHockeyTeams((sqlcur, sqlcon), "Edmonton", "AB", "Oilers", "Western", "Pacific", "Rexall Place", "Edmonton");
-MakeHockeyTeams((sqlcur, sqlcon), "Los Angeles", "CA", "Kings", "Western", "Pacific", "Staples Center", "Los Angeles");
-MakeHockeyTeams((sqlcur, sqlcon), "San Jose", "CA", "Sharks", "Western", "Pacific", "SAP Center", "San Jose");
-MakeHockeyTeams((sqlcur, sqlcon), "Vancouver", "BC", "Canucks", "Western", "Pacific", "Rogers Arena", "Vancouver");
+MakeHockeyTeams((sqlcur, sqlcon), "Anaheim", "CA", "Ducks", "Western", "Pacific", "Honda Center", "Anaheim", "ECHL:Utah Grizzlies,AHL:San Diego Gulls");
+MakeHockeyTeams((sqlcur, sqlcon), "Glendale", "AZ", "Coyotes", "Western", "Pacific", "Gila River Arena", "Arizona", "ECHL:Rapid City Rush,AHL:Springfield Falcons");
+MakeHockeyTeams((sqlcur, sqlcon), "Calgary", "AB", "Flames", "Western", "Pacific", "Scotiabank Saddledome", "Calgary", "ECHL:Adirondack Thunder,AHL:Stockton Heat");
+MakeHockeyTeams((sqlcur, sqlcon), "Edmonton", "AB", "Oilers", "Western", "Pacific", "Rexall Place", "Edmonton", "ECHL:Norfolk Admirals,AHL:Bakersfield Condors");
+MakeHockeyTeams((sqlcur, sqlcon), "Los Angeles", "CA", "Kings", "Western", "Pacific", "Staples Center", "Los Angeles", "ECHL:Manchester Monarchs,AHL:Ontario Reign");
+MakeHockeyTeams((sqlcur, sqlcon), "San Jose", "CA", "Sharks", "Western", "Pacific", "SAP Center", "San Jose", "ECHL:Allen Americans,AHL:San Jose Barracuda");
+MakeHockeyTeams((sqlcur, sqlcon), "Vancouver", "BC", "Canucks", "Western", "Pacific", "Rogers Arena", "Vancouver", "ECHL:None,AHL:Utica Comets");
 
 MakeHockeyArena((sqlcur, sqlcon), "Foxborough", "MA", "Gillette Stadium", "Foxborough");
 MakeHockeyArena((sqlcur, sqlcon), "Minneapolis", "MN", "TCF Bank Stadium", "Minneapolis");
@@ -498,8 +498,8 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  UpdateTeamData(sqldatacon, hometeam, "PCT", HomeWinsPCT, "=");
  UpdateTeamData(sqldatacon, awayteam, "PCT", AwayWinsPCT, "=");
  sqldatacon[1].commit();
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+hometeamname+"\";");
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+awayteamname+"\";");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+hometeamname+"\";");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Stats (TeamID, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak) SELECT id, Date, FullName, CityName, TeamPrefix, AreaName, FullCityName, TeamName, Conference, Division, ArenaName, FullArenaName, Affiliates, GamesPlayed, GamesPlayedHome, GamesPlayedAway, Wins, OTWins, SOWins, OTSOWins, TWins, Losses, OTLosses, SOLosses, OTSOLosses, TLosses, ROW, ROT, ShutoutWins, ShutoutLosses, HomeRecord, AwayRecord, Shootouts, GoalsFor, GoalsAgainst, GoalsDifference, SOGFor, SOGAgainst, SOGDifference, Points, PCT, LastTen, Streak FROM "+leaguename+"Teams WHERE FullName=\""+awayteamname+"\";");
  sqldatacon[1].commit();
  return True;
 
