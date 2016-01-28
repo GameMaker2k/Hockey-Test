@@ -331,7 +331,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
   awaysog = awaysog + int(periodsogsplit[1]);
   awaysb = int(periodsogsplit[1]) - int(periodscoresplit[1]);
   awaytsb = awaysb + awaytsb;
-  sbstr = str(homesb)+":"+str(awaysb)+" ";
+  sbstr = sbstr+str(homesb)+":"+str(awaysb)+" ";
   periodsogcounting = periodsogcounting + 1;
  sbstr = sbstr.rstrip();
  tsbstr = str(hometsb)+":"+str(awaytsb);
