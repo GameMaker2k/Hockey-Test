@@ -310,6 +310,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  totalscore = str(homescore)+":"+str(awayscore);
  teamscores=totalscore.split(":");
  shotsongoalsplit = shotsongoal.split(",");
+ periodssplits = periodsscore.split(",");
  numberofsogperiods=int(len(shotsongoalsplit));
  periodsogcounting = 0;
  homesog = 0;
@@ -320,7 +321,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  awayperiodsog = "";
  while(periodsogcounting<numberofsogperiods):
   periodsogsplit = shotsongoalsplit[periodsogcounting].split(":");
-  periodscoresplit = periodssplit[periodcounting].split(":");
+  periodscoresplit = periodssplits[periodsogcounting].split(":");
   homesog = homesog + int(periodsogsplit[0]);
   homesb = int(periodsogsplit[0]) - int(periodscoresplit[0]);
   hometsb = homesb + hometsb;
