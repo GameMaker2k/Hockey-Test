@@ -277,7 +277,7 @@ print("DONE! All Team Data Inserted.");
 print("Creating "+leaguename+" Game Table.");
 
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Games");
-sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, HomeTeam Text, AwayTeam Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal INTEGER, FullShotsOnGoal INTEGER, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, HomeTeam Text, AwayTeam Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal INTEGER, FullShotsOnGoal INTEGER, ShotsBlocked INTEGER, FullShotsBlocked INTEGER, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
 sqlcon.commit();
 
 def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongoal, atarena, isplayoffgame):
@@ -317,13 +317,23 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  periodsogcounting = 0;
  homesog = 0;
  awaysog = 0;
+ hometsb = 0;
+ awaytsb = 0;
  homeperiodsog = "";
  awayperiodsog = "";
  while(periodsogcounting<numberofsogperiods):
   periodsogsplit = shotsongoalsplit[periodsogcounting].split(":");
+  periodscoresplit = periodssplit[periodcounting].split(":");
   homesog = homesog + int(periodsogsplit[0]);
+  homesb = int(periodsogsplit[0]) - int(periodscoresplit[0]);
+  hometsb = homesb + hometsb;
   awaysog = awaysog + int(periodsogsplit[1]);
+  awaysb = int(periodsogsplit[1]) - int(periodscoresplit[1]);
+  awaytsb = awaysb + awaytsb;
+  sbstr = str(homesb)+":"+str(awaysb)+" ";
   periodsogcounting = periodsogcounting + 1;
+ sbstr = sbstr.rstrip();
+ tsbstr = str(hometsb)+":"+str(awaytsb);
  totalsog = str(homesog)+":"+str(awaysog);
  teamssog=totalsog.split(":");
  hometeamname = hometeam;
@@ -361,7 +371,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
   winningteamname = awayteamname;
   losingteamname = hometeamname;
  print(" ");
- sqldatacon[0].execute("INSERT INTO "+leaguename+"Games(Date, HomeTeam, AwayTeam, AtArena, TeamScorePeriods, TeamFullScore, ShotsOnGoal, FullShotsOnGoal, NumberPeriods, TeamWin, IsPlayOffGame) VALUES("+str(date)+", \""+str(hometeamname)+"\", \""+str(awayteamname)+"\", \""+str(atarenaname)+"\", \""+str(periodsscore)+"\", \""+str(totalscore)+"\", \""+str(shotsongoal)+"\", \""+str(totalsog)+"\", "+str(numberofperiods)+", \""+str(winningteamname)+"\", "+str(isplayoffgsql)+")");
+ sqldatacon[0].execute("INSERT INTO "+leaguename+"Games(Date, HomeTeam, AwayTeam, AtArena, TeamScorePeriods, TeamFullScore, ShotsOnGoal, FullShotsOnGoal, ShotsBlocked, FullShotsBlocked, NumberPeriods, TeamWin, IsPlayOffGame) VALUES("+str(date)+", \""+str(hometeamname)+"\", \""+str(awayteamname)+"\", \""+str(atarenaname)+"\", \""+str(periodsscore)+"\", \""+str(totalscore)+"\", \""+str(shotsongoal)+"\", \""+str(totalsog)+"\", \""+str(sbstr)+"\", \""+str(tsbstr)+"\", "+str(numberofperiods)+", \""+str(winningteamname)+"\", "+str(isplayoffgsql)+")");
  UpdateArenaData(sqldatacon, atarena, "GamesPlayed", 1, "+");
  UpdateTeamData(sqldatacon, hometeam, "Date", int(date), "=");
  UpdateTeamData(sqldatacon, hometeam, "GamesPlayed", 1, "+");
