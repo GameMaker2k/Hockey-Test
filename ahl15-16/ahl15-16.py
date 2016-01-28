@@ -317,6 +317,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
  awaysog = 0;
  hometsb = 0;
  awaytsb = 0;
+ sbstr = "";
  homeperiodsog = "";
  awayperiodsog = "";
  while(periodsogcounting<numberofsogperiods):
@@ -331,6 +332,7 @@ def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongo
   sbstr = sbstr+str(homesb)+":"+str(awaysb)+" ";
   periodsogcounting = periodsogcounting + 1;
  sbstr = sbstr.rstrip();
+ sbstr = sbstr.replace(" ", ",");
  tsbstr = str(hometsb)+":"+str(awaytsb);
  totalsog = str(homesog)+":"+str(awaysog);
  teamssog=totalsog.split(":");
