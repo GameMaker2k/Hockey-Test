@@ -445,7 +445,10 @@ if($_GET['act']=="stats") {
  if(!isset($_GET['division'])) { $_GET['division'] = "All"; } }
 if(!isset($_GET['act'])) { $_GET['act'] = "view"; }
 if($_GET['act']!="view" && $_GET['act']!="games" && $_GET['act']!="stats" && $_GET['act']!="calendar") { $_GET['act'] = "view"; }
-$sqldb = new SQLite3("../hockey15-16.db3");
+if(file_exists("./nhl15-16.db3")) {
+ $sqldb = new SQLite3("./nhl15-16.db3"); } 
+else {
+ $sqldb = new SQLite3("../hockey15-16.db3"); }
 $sqldb->exec("PRAGMA encoding = \"UTF-8\";");
 $sqldb->exec("PRAGMA auto_vacuum = 1;");
 $sqldb->exec("PRAGMA foreign_keys = 1;");
