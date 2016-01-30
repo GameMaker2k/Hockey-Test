@@ -274,7 +274,7 @@ print("DONE! All Team Data Inserted.");
 print("Creating "+leaguename+" Game Table.");
 
 sqlcon.execute("DROP TABLE IF EXISTS "+leaguename+"Games");
-sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, HomeTeam Text, AwayTeam Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal INTEGER, FullShotsOnGoal INTEGER, ShotsBlocked INTEGER, FullShotsBlocked INTEGER, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
+sqlcur.execute("CREATE TABLE "+leaguename+"Games(id INTEGER PRIMARY KEY, Date INTEGER, HomeTeam Text, AwayTeam Text, AtArena Text, TeamScorePeriods TEXT, TeamFullScore Text, ShotsOnGoal TEXT, FullShotsOnGoal TEXT, ShotsBlocked TEXT, FullShotsBlocked TEXT, NumberPeriods INTEGER, TeamWin Text, IsPlayOffGame INTEGER)");
 sqlcon.commit();
 
 def MakeHockeyGame(sqldatacon, date, hometeam, awayteam, periodsscore, shotsongoal, atarena, isplayoffgame):
