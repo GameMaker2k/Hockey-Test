@@ -1,0 +1,7362 @@
+Creating ECHL Database.
+Creating ECHL Conference Table.
+Inserting ECHL Conference Data.
+Conference Name: Eastern
+ 
+Conference Name: Western
+ 
+Creating ECHL Division Table.
+Inserting ECHL Division Data.
+Conference Name: Eastern
+Division Name: East
+ 
+Conference Name: Eastern
+Division Name: North
+ 
+Conference Name: Eastern
+Division Name: South
+ 
+Conference Name: Western
+Division Name: Midwest
+ 
+Conference Name: Western
+Division Name: Central
+ 
+Conference Name: Western
+Division Name: West
+ 
+Creating ECHL Team Table.
+Inserting ECHL Team Data.
+Inserting ECHL Teams From Eastern Conference.
+Inserting ECHL Teams From East Division.
+
+Team Name: Jackals
+Arena Name: First Arena
+City Name: Elmira
+Full City Name: Elmira, NY
+Full Name: Elmira Jackals
+Conference: Eastern
+Division: East
+ 
+Team Name: Royals
+Arena Name: Santander Arena
+City Name: Reading
+Full City Name: Reading, PA
+Full Name: Reading Royals
+Conference: Eastern
+Division: East
+ 
+Team Name: Admirals
+Arena Name: Norfolk Scope
+City Name: Norfolk
+Full City Name: Norfolk, VA
+Full Name: Norfolk Admirals
+Conference: Eastern
+Division: East
+ 
+Team Name: Thunder
+Arena Name: Glens Falls Civic Center
+City Name: Glens Falls
+Full City Name: Glens Falls, NY
+Full Name: Adirondack Thunder
+Conference: Eastern
+Division: East
+ 
+Team Name: Monarchs
+Arena Name: Verizon Wireless Arena
+City Name: Manchester
+Full City Name: Manchester, NH
+Full Name: Manchester Monarchs
+Conference: Eastern
+Division: East
+ 
+Inserting ECHL Teams From North Division.
+
+Team Name: Wings
+Arena Name: Wings Event Center
+City Name: Kalamazoo
+Full City Name: Kalamazoo, MI
+Full Name: Kalamazoo Wings
+Conference: Eastern
+Division: North
+ 
+Team Name: Walleye
+Arena Name: Huntington Center
+City Name: Toledo
+Full City Name: Toledo, OH
+Full Name: Toledo Walleye
+Conference: Eastern
+Division: North
+ 
+Team Name: Nailers
+Arena Name: WesBanco Arena
+City Name: Wheeling
+Full City Name: Wheeling, WV
+Full Name: Wheeling Nailers
+Conference: Eastern
+Division: North
+ 
+Team Name: Beast
+Arena Name: Powerade Centre
+City Name: Brampton
+Full City Name: Brampton, ON
+Full Name: Brampton Beast
+Conference: Eastern
+Division: North
+ 
+Inserting ECHL Teams From South Division.
+
+Team Name: Gladiators
+Arena Name: Infinite Energy Arena
+City Name: Duluth
+Full City Name: Duluth, GA
+Full Name: Atlanta Gladiators
+Conference: Eastern
+Division: South
+ 
+Team Name: Swamp Rabbits
+Arena Name: Bon Secours Wellness Arena
+City Name: Greenville
+Full City Name: Greenville, SC
+Full Name: Greenville Swamp Rabbits
+Conference: Eastern
+Division: South
+ 
+Team Name: Everblades
+Arena Name: Germain Arena
+City Name: Estero
+Full City Name: Estero, FL
+Full Name: Florida Everblades
+Conference: Eastern
+Division: South
+ 
+Team Name: Solar Bears
+Arena Name: Amway Center
+City Name: Orlando
+Full City Name: Orlando, FL
+Full Name: Orlando Solar Bears
+Conference: Eastern
+Division: South
+ 
+Team Name: Stingrays
+Arena Name: North Charleston Coliseum
+City Name: North Charleston
+Full City Name: North Charleston, SC
+Full Name: South Carolina Stingrays
+Conference: Eastern
+Division: South
+ 
+Inserting ECHL Teams From Western Conference.
+Inserting ECHL Teams From Midwest Division.
+
+Team Name: Mallards
+Arena Name: iWireless Center
+City Name: Moline
+Full City Name: Moline, IL
+Full Name: Quad City Mallards
+Conference: Western
+Division: Midwest
+ 
+Team Name: IceMen
+Arena Name: Ford Center
+City Name: Evansville
+Full City Name: Evansville, IN
+Full Name: Evansville IceMen
+Conference: Western
+Division: Midwest
+ 
+Team Name: Fuel
+Arena Name: Indiana Farmers Coliseum
+City Name: Indianapolis
+Full City Name: Indianapolis, IN
+Full Name: Indy Fuel
+Conference: Western
+Division: Midwest
+ 
+Team Name: Komets
+Arena Name: Allen County War Memorial Coliseum
+City Name: Fort Wayne
+Full City Name: Fort Wayne, IN
+Full Name: Fort Wayne Komets
+Conference: Western
+Division: Midwest
+ 
+Team Name: Cyclones
+Arena Name: US Bank Arena
+City Name: Cincinnati
+Full City Name: Cincinnati, OH
+Full Name: Cincinnati Cyclones
+Conference: Western
+Division: Midwest
+ 
+Inserting ECHL Teams From Central Division.
+
+Team Name: Thunder
+Arena Name: Intrust Bank Arena
+City Name: Wichita
+Full City Name: Wichita, KS
+Full Name: Wichita Thunder
+Conference: Western
+Division: Central
+ 
+Team Name: Americans
+Arena Name: Allen Event Center
+City Name: Allen
+Full City Name: Allen, TX
+Full Name: Allen Americans
+Conference: Western
+Division: Central
+ 
+Team Name: Oilers
+Arena Name: BOK Center
+City Name: Tulsa
+Full City Name: Tulsa, OK
+Full Name: Tulsa Oilers
+Conference: Western
+Division: Central
+ 
+Team Name: Mavericks
+Arena Name: Silverstein Eye Centers Arena
+City Name: Independence
+Full City Name: Independence, MO
+Full Name: Missouri Mavericks
+Conference: Western
+Division: Central
+ 
+Inserting ECHL Teams From West Division.
+
+Team Name: Aces
+Arena Name: Sullivan Arena
+City Name: Anchorage
+Full City Name: Anchorage, AK
+Full Name: Alaska Aces
+Conference: Western
+Division: West
+ 
+Team Name: Steelheads
+Arena Name: CenturyLink Arena
+City Name: Boise
+Full City Name: Boise, ID
+Full Name: Idaho Steelheads
+Conference: Western
+Division: West
+ 
+Team Name: Grizzlies
+Arena Name: Maverik Center
+City Name: West Valley City
+Full City Name: West Valley City, UT
+Full Name: Utah Grizzlies
+Conference: Western
+Division: West
+ 
+Team Name: Eagles
+Arena Name: Budweiser Events Center
+City Name: Loveland
+Full City Name: Loveland, CO
+Full Name: Colorado Eagles
+Conference: Western
+Division: West
+ 
+Team Name: Rush
+Arena Name: Rushmore Plaza Civic Center
+City Name: Rapid City
+Full City Name: Rapid City, SD
+Full Name: Rapid City Rush
+Conference: Western
+Division: West
+ 
+DONE! All Team Data Inserted.
+Creating ECHL Game Table.
+Inserting ECHL Game Data From 10/7/2015.
+
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 2 4
+Home Score: 6
+Away Team: Wheeling Nailers
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Wheeling Nailers
+ 
+Inserting ECHL Game Data From 10/9/2015.
+
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Reading Royals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Reading Royals
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 1 0 1
+Home Score: 3
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 0 2 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 3 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 2 2
+Home Score: 6
+Away Team: Evansville IceMen
+Away Period Scores: 2 2 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Evansville IceMen
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Rapid City Rush
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 3 1 3
+Home Score: 7
+Away Team: Utah Grizzlies
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 10/10/2015.
+
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 4 1 2
+Home Score: 7
+Away Team: Allen Americans
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Allen Americans
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 4 0 0
+Home Score: 4
+Away Team: Manchester Monarchs
+Away Period Scores: 1 2 1 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 0 1 0
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 2 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Orlando Solar Bears
+Losing Team: Florida Everblades
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Norfolk Admirals
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 3 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 1 3
+Home Score: 6
+Away Team: Evansville IceMen
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Evansville IceMen
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Idaho Steelheads
+Away Period Scores: 3 0 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Colorado Eagles
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 10/11/2015.
+
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 1 0 0
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 0 2 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Atlanta Gladiators
+ 
+Inserting ECHL Game Data From 10/12/2015.
+
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 10/13/2015.
+
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Missouri Mavericks
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Missouri Mavericks
+ 
+Inserting ECHL Game Data From 10/16/2015.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Brampton Beast
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Adirondack Thunder
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Elmira Jackals
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 1 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Wheeling Nailers
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 3 0 0 1
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 0 2 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 0 0 0 1
+Home Score: 3
+Away Team: Toledo Walleye
+Away Period Scores: 2 0 0 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Indy Fuel
+Losing Team: Toledo Walleye
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Quad City Mallards
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Allen Americans
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 0 2 0
+Home Score: 3
+Away Team: Utah Grizzlies
+Away Period Scores: 0 2 1 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Utah Grizzlies
+Losing Team: Colorado Eagles
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 1 3
+Home Score: 5
+Away Team: Rapid City Rush
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Rapid City Rush
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Missouri Mavericks
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Missouri Mavericks
+ 
+Inserting ECHL Game Data From 10/17/2015.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 2 1 3
+Home Score: 6
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 3 3 0
+Home Score: 6
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Brampton Beast
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Reading Royals
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Reading Royals
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 3 0 1
+Home Score: 4
+Away Team: Wheeling Nailers
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 1 3
+Home Score: 5
+Away Team: Toledo Walleye
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Toledo Walleye
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 2 1 0 1
+Home Score: 5
+Away Team: Quad City Mallards
+Away Period Scores: 1 2 1 0 0
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Wichita Thunder
+Losing Team: Quad City Mallards
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Indy Fuel
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Utah Grizzlies
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Colorado Eagles
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 4 0 0 0
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 1 1 2 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Rapid City Rush
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Missouri Mavericks
+Away Period Scores: 2 1 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 10/18/2015.
+
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Reading Royals
+Away Period Scores: 3 1 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Allen Americans
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 10/21/2015.
+
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 3 3
+Home Score: 6
+Away Team: Norfolk Admirals
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Allen Americans
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Colorado Eagles
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 0 2 0 0
+Home Score: 3
+Away Team: Idaho Steelheads
+Away Period Scores: 2 0 1 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Idaho Steelheads
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 10/22/2015.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 3 0 3
+Home Score: 6
+Away Team: Norfolk Admirals
+Away Period Scores: 2 1 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Norfolk Admirals
+ 
+Inserting ECHL Game Data From 10/23/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 3 0 2
+Home Score: 5
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Reading Royals
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 2 1 1 0
+Home Score: 4
+Away Team: Adirondack Thunder
+Away Period Scores: 2 2 0 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Adirondack Thunder
+Losing Team: Brampton Beast
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Florida Everblades
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Florida Everblades
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 0 0 3
+Home Score: 3
+Away Team: Indy Fuel
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Indy Fuel
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Missouri Mavericks
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Tulsa Oilers
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Quad City Mallards
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Colorado Eagles
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Colorado Eagles
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 10/24/2015.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 2 3 2
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Reading Royals
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Manchester Monarchs
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 1 4
+Home Score: 6
+Away Team: Norfolk Admirals
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 1 1 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Greenville Swamp Rabbits
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 3 1 1
+Home Score: 6
+Away Team: Indy Fuel
+Away Period Scores: 2 2 1 0
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Fort Wayne Komets
+Losing Team: Indy Fuel
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Brampton Beast
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Tulsa Oilers
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Evansville IceMen
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 2 2 0
+Home Score: 5
+Away Team: Allen Americans
+Away Period Scores: 2 2 1 1
+Away Score: 6
+Number Of Periods: 4
+Winning Team: Allen Americans
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Rapid City Rush
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Colorado Eagles
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Idaho Steelheads
+Away Period Scores: 0 1 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 10/25/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Wheeling Nailers
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Brampton Beast
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 0 2 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Florida Everblades
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Florida Everblades
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 3
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 2 0 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 10/27/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Indy Fuel
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Indy Fuel
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 0 3 2
+Home Score: 5
+Away Team: Quad City Mallards
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Quad City Mallards
+ 
+Inserting ECHL Game Data From 10/28/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 3 2 3
+Home Score: 8
+Away Team: Elmira Jackals
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Florida Everblades
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 10/30/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 1 2 1
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 2 0 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Elmira Jackals
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Brampton Beast
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 1 0 0 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 0 2 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Norfolk Admirals
+Losing Team: Quad City Mallards
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 2 0
+Home Score: 4
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Adirondack Thunder
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 3 1 1
+Home Score: 5
+Away Team: Colorado Eagles
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Colorado Eagles
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 1 1 0 1
+Home Score: 4
+Away Team: Missouri Mavericks
+Away Period Scores: 0 2 1 0 0
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Tulsa Oilers
+Losing Team: Missouri Mavericks
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Alaska Aces
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Rapid City Rush
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Utah Grizzlies
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 10/31/2015.
+
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Colorado Eagles
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Colorado Eagles
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 3 2
+Home Score: 5
+Away Team: Alaska Aces
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Alaska Aces
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Reading Royals
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Manchester Monarchs
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Elmira Jackals
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Cincinnati Cyclones
+Away Period Scores: 3 2 0
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Quad City Mallards
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Quad City Mallards
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Missouri Mavericks
+ 
+Inserting ECHL Game Data From 11/1/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 2 3
+Home Score: 5
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Toledo Walleye
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Florida Everblades
+Away Period Scores: 2 3 2
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Evansville IceMen
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Evansville IceMen
+ 
+Inserting ECHL Game Data From 11/2/2015.
+
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 11/3/2015.
+
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Florida Everblades
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Florida Everblades
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Allen Americans
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Inserting ECHL Game Data From 11/4/2015.
+
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Indy Fuel
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 0 1 0
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 0 0 2 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Adirondack Thunder
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 0 1 0
+Home Score: 3
+Away Team: Missouri Mavericks
+Away Period Scores: 1 2 0 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Missouri Mavericks
+Losing Team: Quad City Mallards
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 0 1 0 0
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 0 1 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Toledo Walleye
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 2 2 0
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 3 0 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Utah Grizzlies
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 11/6/2015.
+
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Elmira Jackals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Manchester Monarchs
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Adirondack Thunder
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Toledo Walleye
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Toledo Walleye
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Wichita Thunder
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Wichita Thunder
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Indy Fuel
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Indy Fuel
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Allen Americans
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Rapid City Rush
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 2 1 1 0
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 2 1 1 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Utah Grizzlies
+Away Period Scores: 0 1 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 11/7/2015.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Florida Everblades
+Away Period Scores: 2 1 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 4 0
+Home Score: 5
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Elmira Jackals
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Elmira Jackals
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Manchester Monarchs
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Brampton Beast
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Toledo Walleye
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 3 1 2
+Home Score: 6
+Away Team: Wheeling Nailers
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 2 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 2 1
+Home Score: 5
+Away Team: Quad City Mallards
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Evansville IceMen
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Wichita Thunder
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 2 2 3
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Rapid City Rush
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Utah Grizzlies
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 11/8/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Manchester Monarchs
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Manchester Monarchs
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 2 0 3
+Home Score: 5
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 2 1 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 11/10/2015.
+
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 1 5
+Home Score: 7
+Away Team: Cincinnati Cyclones
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 3 3 1
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Florida Everblades
+Away Period Scores: 3 2 3
+Away Score: 8
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Elmira Jackals
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 11/11/2015.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Wheeling Nailers
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 2 3
+Home Score: 7
+Away Team: Alaska Aces
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Alaska Aces
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0 0 1
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Wichita Thunder
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Colorado Eagles
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 11/12/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 2 1 3
+Home Score: 6
+Away Team: Atlanta Gladiators
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 2 3
+Home Score: 5
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 11/13/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Evansville IceMen
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 2 0 3
+Home Score: 5
+Away Team: Toledo Walleye
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Toledo Walleye
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Norfolk Admirals
+Away Period Scores: 2 0 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Elmira Jackals
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 0 0 0 1
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 0 1 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: South Carolina Stingrays
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 3 0 1
+Home Score: 4
+Away Team: Idaho Steelheads
+Away Period Scores: 2 1 0 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Alaska Aces
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Quad City Mallards
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 3 2 1
+Home Score: 6
+Away Team: Reading Royals
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Reading Royals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Adirondack Thunder
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 5 1 1
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 3 0 1
+Home Score: 5
+Away Team: Rapid City Rush
+Away Period Scores: 1 0 3 0
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Utah Grizzlies
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 11/14/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 0 0 1
+Home Score: 2
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 1 0
+Away Score: 1
+Number Of Periods: 4
+Winning Team: Kalamazoo Wings
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Norfolk Admirals
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 2 3 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Idaho Steelheads
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Brampton Beast
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Elmira Jackals
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 0 0 0 0
+Home Score: 1
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 1 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Orlando Solar Bears
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 1 0 0 1
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 1 0 1 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Indy Fuel
+Losing Team: Alaska Aces
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 0 1 0
+Home Score: 1
+Away Team: Evansville IceMen
+Away Period Scores: 1 0 0 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Evansville IceMen
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 1 0 0 0
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 0 1 1 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Colorado Eagles
+Away Period Scores: 1 3 4
+Away Score: 8
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Allen Americans
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Rapid City Rush
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 11/15/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 2 2 2
+Home Score: 6
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 2 0 0 1
+Home Score: 4
+Away Team: Toledo Walleye
+Away Period Scores: 2 0 1 0 0
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Manchester Monarchs
+Losing Team: Toledo Walleye
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Evansville IceMen
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Evansville IceMen
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Colorado Eagles
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Colorado Eagles
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Fort Wayne Komets
+ 
+Inserting ECHL Game Data From 11/17/2015.
+
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Alaska Aces
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 3 1 0
+Home Score: 5
+Away Team: Orlando Solar Bears
+Away Period Scores: 4 0 1 1
+Away Score: 6
+Number Of Periods: 4
+Winning Team: Orlando Solar Bears
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Allen Americans
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Allen Americans
+ 
+Inserting ECHL Game Data From 11/18/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Norfolk Admirals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Elmira Jackals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Alaska Aces
+Away Period Scores: 1 4 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Evansville IceMen
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Wheeling Nailers
+Away Period Scores: 3 3 0
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Florida Everblades
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 0 1 0 0
+Home Score: 2
+Away Team: Utah Grizzlies
+Away Period Scores: 1 0 1 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Utah Grizzlies
+Losing Team: Rapid City Rush
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 0 1 0
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 1 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Idaho Steelheads
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 11/19/2015.
+
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 2 0 0 0 0
+Home Score: 2
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 1 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Kalamazoo Wings
+Losing Team: Toledo Walleye
+ 
+Inserting ECHL Game Data From 11/20/2015.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Elmira Jackals
+Away Period Scores: 3 2 0
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Reading Royals
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Brampton Beast
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Wheeling Nailers
+Away Period Scores: 3 1 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Florida Everblades
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Indy Fuel
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Allen Americans
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 0 3 0
+Home Score: 4
+Away Team: Missouri Mavericks
+Away Period Scores: 1 2 1 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Missouri Mavericks
+Losing Team: Tulsa Oilers
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 0 3
+Home Score: 4
+Away Team: Alaska Aces
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Alaska Aces
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 2 1 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Evansville IceMen
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 2 1 1 1
+Home Score: 5
+Away Team: Idaho Steelheads
+Away Period Scores: 2 1 1 0
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Colorado Eagles
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 2 2 1
+Home Score: 5
+Away Team: Utah Grizzlies
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 11/21/2015.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Norfolk Admirals
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 2 3
+Home Score: 5
+Away Team: Wheeling Nailers
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Wheeling Nailers
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 4 1
+Home Score: 5
+Away Team: Reading Royals
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Reading Royals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: South Carolina Stingrays
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 3 2 1
+Home Score: 6
+Away Team: Fort Wayne Komets
+Away Period Scores: 2 1 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 1 1 0 1
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 1 2 0 0
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Cincinnati Cyclones
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 3 1 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Tulsa Oilers
+Away Period Scores: 3 2 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 0 2 1
+Home Score: 4
+Away Team: Utah Grizzlies
+Away Period Scores: 1 0 2 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Rapid City Rush
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 11/22/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Norfolk Admirals
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Allen Americans
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Tulsa Oilers
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Indy Fuel
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Indy Fuel
+ 
+Inserting ECHL Game Data From 11/23/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Inserting ECHL Game Data From 11/24/2015.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 3 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Manchester Monarchs
+ 
+Inserting ECHL Game Data From 11/25/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Elmira Jackals
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Reading Royals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Reading Royals
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 3 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Norfolk Admirals
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 0 1 0
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 0 1 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Fort Wayne Komets
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Indy Fuel
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Indy Fuel
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Quad City Mallards
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Quad City Mallards
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Florida Everblades
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 11/26/2015.
+
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Manchester Monarchs
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 1 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Fort Wayne Komets
+ 
+Inserting ECHL Game Data From 11/27/2015.
+
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 2 0 0 1
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 0 2 0 0
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Atlanta Gladiators
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 2 2 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Reading Royals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Brampton Beast
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 1 3 0 0
+Home Score: 5
+Away Team: Manchester Monarchs
+Away Period Scores: 1 3 1 0 1
+Away Score: 6
+Number Of Periods: 5
+Winning Team: Manchester Monarchs
+Losing Team: Norfolk Admirals
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Indy Fuel
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Indy Fuel
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 4 2 1
+Home Score: 7
+Away Team: Allen Americans
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Allen Americans
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Florida Everblades
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Colorado Eagles
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Rapid City Rush
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Evansville IceMen
+Away Period Scores: 0 4 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 11/28/2015.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 1 1 0 0
+Home Score: 3
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 2 0 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Reading Royals
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 3 0 0 1
+Home Score: 5
+Away Team: Adirondack Thunder
+Away Period Scores: 2 1 1 0 0
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Elmira Jackals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 0 0 0 1
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 0 0 0 0
+Away Score: 0
+Number Of Periods: 4
+Winning Team: Fort Wayne Komets
+Losing Team: Toledo Walleye
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Brampton Beast
+Away Period Scores: 2 3 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Indy Fuel
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Indy Fuel
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Allen Americans
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Allen Americans
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Florida Everblades
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Florida Everblades
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 0 3
+Home Score: 4
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Evansville IceMen
+ 
+Inserting ECHL Game Data From 11/29/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Brampton Beast
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 3 0 0 0
+Home Score: 3
+Away Team: Toledo Walleye
+Away Period Scores: 0 1 2 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Toledo Walleye
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: Wheeling Nailers
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Tulsa Oilers
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 0 2 1
+Home Score: 3
+Away Team: Indy Fuel
+Away Period Scores: 1 0 1 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Quad City Mallards
+Losing Team: Indy Fuel
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 1 3 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 11/30/2015.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: South Carolina Stingrays
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Orlando Solar Bears
+ 
+Inserting ECHL Game Data From 12/1/2015.
+
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 0 1 0 0
+Home Score: 1
+Away Team: Quad City Mallards
+Away Period Scores: 0 1 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Quad City Mallards
+Losing Team: Cincinnati Cyclones
+ 
+Inserting ECHL Game Data From 12/2/2015.
+
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Missouri Mavericks
+Away Period Scores: 3 0 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Evansville IceMen
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 0 3
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Rapid City Rush
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Tulsa Oilers
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 1 0
+Home Score: 1
+Away Team: Colorado Eagles
+Away Period Scores: 1 0 0 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Colorado Eagles
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 12/3/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 0 1 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Indy Fuel
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Adirondack Thunder
+Away Period Scores: 1 3 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Brampton Beast
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 4 1 0
+Home Score: 5
+Away Team: Utah Grizzlies
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 12/4/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 2 3
+Home Score: 5
+Away Team: Brampton Beast
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Brampton Beast
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Reading Royals
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Reading Royals
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 4 1 1 0
+Home Score: 6
+Away Team: Cincinnati Cyclones
+Away Period Scores: 2 2 2 1
+Away Score: 7
+Number Of Periods: 4
+Winning Team: Cincinnati Cyclones
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Elmira Jackals
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Indy Fuel
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Rapid City Rush
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Rapid City Rush
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 1 1 3
+Home Score: 5
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 3 3
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Evansville IceMen
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Florida Everblades
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Florida Everblades
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 2 1 3
+Home Score: 6
+Away Team: Colorado Eagles
+Away Period Scores: 0 1 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 12/5/2015.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Reading Royals
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Norfolk Admirals
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: South Carolina Stingrays
+Away Period Scores: 3 2 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 4 1 2
+Home Score: 7
+Away Team: Utah Grizzlies
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 2 3 0
+Home Score: 5
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Colorado Eagles
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 12/6/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 0 3
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Reading Royals
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Reading Royals
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Indy Fuel
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 2 0 0 0
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 2 0 0 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Elmira Jackals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 1 3 1 0
+Home Score: 5
+Away Team: Quad City Mallards
+Away Period Scores: 1 1 3 1
+Away Score: 6
+Number Of Periods: 4
+Winning Team: Quad City Mallards
+Losing Team: Evansville IceMen
+ 
+Inserting ECHL Game Data From 12/9/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 0 1 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Brampton Beast
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Evansville IceMen
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Toledo Walleye
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 0 2 0 1
+Home Score: 3
+Away Team: Reading Royals
+Away Period Scores: 0 2 0 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Florida Everblades
+Losing Team: Reading Royals
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 1 4
+Home Score: 5
+Away Team: Alaska Aces
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 12/8/2015.
+
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 4 2
+Home Score: 7
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 12/10/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 2 1 3
+Home Score: 6
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Wheeling Nailers
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Indy Fuel
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 12/11/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 3 0 1
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Brampton Beast
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Norfolk Admirals
+Away Period Scores: 0 2 4
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 0 1 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Orlando Solar Bears
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 0 0 0 1
+Home Score: 2
+Away Team: Manchester Monarchs
+Away Period Scores: 1 0 0 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Elmira Jackals
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 1 0 0 1
+Home Score: 2
+Away Team: Wheeling Nailers
+Away Period Scores: 0 0 1 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Toledo Walleye
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 2 0 0 1
+Home Score: 3
+Away Team: Reading Royals
+Away Period Scores: 0 0 2 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Reading Royals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 1 0 0
+Home Score: 2
+Away Team: Indy Fuel
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Indy Fuel
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Idaho Steelheads
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 2 4 1
+Home Score: 7
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Wichita Thunder
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Quad City Mallards
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Quad City Mallards
+ 
+Inserting ECHL Game Data From 12/12/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 3 0 0
+Home Score: 3
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Brampton Beast
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 1 1 0
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 0 1 2 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Reading Royals
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Florida Everblades
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 0 0 1
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 0 0 0
+Away Score: 1
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 3 1 1
+Home Score: 5
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Indy Fuel
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 2 2 2
+Home Score: 6
+Away Team: Evansville IceMen
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Evansville IceMen
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 4 1
+Home Score: 6
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Toledo Walleye
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Alaska Aces
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Wichita Thunder
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Wichita Thunder
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Quad City Mallards
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 12/13/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 3 0 2 0
+Home Score: 5
+Away Team: Norfolk Admirals
+Away Period Scores: 1 3 1 1
+Away Score: 6
+Number Of Periods: 4
+Winning Team: Norfolk Admirals
+Losing Team: Brampton Beast
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Adirondack Thunder
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Evansville IceMen
+Away Period Scores: 1 2 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Idaho Steelheads
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Idaho Steelheads
+Losing Team: Allen Americans
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Missouri Mavericks
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Missouri Mavericks
+ 
+Inserting ECHL Game Data From 12/16/2015.
+
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Indy Fuel
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Indy Fuel
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 3 0 1
+Home Score: 4
+Away Team: Elmira Jackals
+Away Period Scores: 3 1 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 2 2 1 0
+Home Score: 5
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 2 2 1
+Away Score: 6
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Evansville IceMen
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Reading Royals
+Away Period Scores: 2 1 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Allen Americans
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Allen Americans
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 4 3
+Home Score: 8
+Away Team: Utah Grizzlies
+Away Period Scores: 4 0 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 12/17/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 0 0 0
+Home Score: 1
+Away Team: Manchester Monarchs
+Away Period Scores: 0 0 1 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Manchester Monarchs
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 2 0 0 0
+Home Score: 3
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 1 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Toledo Walleye
+Losing Team: Brampton Beast
+ 
+Inserting ECHL Game Data From 12/18/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Reading Royals
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 1 0
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 0 0 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Adirondack Thunder
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 1 3 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 0 2 0
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Wichita Thunder
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 3 1 1
+Home Score: 5
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Wheeling Nailers
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Quad City Mallards
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Indy Fuel
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Indy Fuel
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Colorado Eagles
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Colorado Eagles
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 1 4
+Home Score: 6
+Away Team: Allen Americans
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Allen Americans
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 2 3
+Home Score: 5
+Away Team: Rapid City Rush
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 12/19/2015.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 2 0 4
+Home Score: 6
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Manchester Monarchs
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 3 0
+Home Score: 5
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Brampton Beast
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 0 1 0 1
+Home Score: 3
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 1 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Wheeling Nailers
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Indy Fuel
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 3 1 2
+Home Score: 6
+Away Team: Colorado Eagles
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Colorado Eagles
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 2 0 0 0
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 2 0 0 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Allen Americans
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 4 0 0
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 12/20/2015.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 3 4
+Home Score: 7
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: Toledo Walleye
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Indy Fuel
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Quad City Mallards
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Quad City Mallards
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Cincinnati Cyclones
+Away Period Scores: 2 2 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Wichita Thunder
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Rapid City Rush
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 12/21/2015.
+
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Tulsa Oilers
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Inserting ECHL Game Data From 12/26/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 3 1 2
+Home Score: 6
+Away Team: Manchester Monarchs
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Reading Royals
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 2 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Norfolk Admirals
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Wheeling Nailers
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 0 3
+Home Score: 5
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0 0 0
+Home Score: 1
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Allen Americans
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Indy Fuel
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 0 2 1 1
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 1 1 1 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Utah Grizzlies
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 12/27/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 1 4 1
+Home Score: 6
+Away Team: Reading Royals
+Away Period Scores: 1 2 2 0
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Brampton Beast
+Losing Team: Reading Royals
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 1 0 0
+Home Score: 2
+Away Team: Atlanta Gladiators
+Away Period Scores: 1 0 1 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Quad City Mallards
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Norfolk Admirals
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 1 3
+Home Score: 4
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 5 1
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Florida Everblades
+Away Period Scores: 1 3 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Colorado Eagles
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 12/28/2015.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 2 0 0
+Home Score: 2
+Away Team: Reading Royals
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Reading Royals
+Losing Team: Brampton Beast
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 12/29/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 3 0 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 1 3
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 1 1 1 0
+Home Score: 3
+Away Team: Brampton Beast
+Away Period Scores: 1 2 0 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Brampton Beast
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Indy Fuel
+Away Period Scores: 2 1 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Cincinnati Cyclones
+ 
+Inserting ECHL Game Data From 12/30/2015.
+
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 1 0 1
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 2 1 0 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Norfolk Admirals
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Evansville IceMen
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Quad City Mallards
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Elmira Jackals
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Toledo Walleye
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Allen Americans
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 2 3 1
+Home Score: 6
+Away Team: Colorado Eagles
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Colorado Eagles
+ 
+Inserting ECHL Game Data From 12/31/2015.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 0 0 0 1
+Home Score: 2
+Away Team: Reading Royals
+Away Period Scores: 0 1 0 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Adirondack Thunder
+Losing Team: Reading Royals
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 3 1 1
+Home Score: 5
+Away Team: Elmira Jackals
+Away Period Scores: 2 1 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Elmira Jackals
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 1 3
+Home Score: 4
+Away Team: Toledo Walleye
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Toledo Walleye
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 0 2 0
+Home Score: 3
+Away Team: Brampton Beast
+Away Period Scores: 1 2 0 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Brampton Beast
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 1 1 1
+Home Score: 3
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 2 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Manchester Monarchs
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 5 0
+Home Score: 7
+Away Team: Indy Fuel
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Indy Fuel
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 3 3 1
+Home Score: 7
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Quad City Mallards
+Away Period Scores: 2 2 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Evansville IceMen
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Tulsa Oilers
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Rapid City Rush
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Utah Grizzlies
+Away Period Scores: 2 1 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/1/2016.
+
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Allen Americans
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Allen Americans
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 2 2
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Florida Everblades
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Indy Fuel
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Colorado Eagles
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Utah Grizzlies
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/2/2016.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 2 0 0
+Home Score: 2
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 1 0 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 2 2
+Home Score: 4
+Away Team: Elmira Jackals
+Away Period Scores: 2 3 0
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 3 2
+Home Score: 5
+Away Team: Adirondack Thunder
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Florida Everblades
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Florida Everblades
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 0 3
+Home Score: 4
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Toledo Walleye
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Atlanta Gladiators
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Indy Fuel
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Brampton Beast
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Brampton Beast
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Allen Americans
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Quad City Mallards
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 2 1 0 0
+Home Score: 3
+Away Team: Missouri Mavericks
+Away Period Scores: 1 0 2 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Missouri Mavericks
+Losing Team: Evansville IceMen
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Tulsa Oilers
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Tulsa Oilers
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Colorado Eagles
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Colorado Eagles
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Utah Grizzlies
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 1/3/2016.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 1 1 0 0
+Home Score: 2
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 2 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Manchester Monarchs
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 0 2
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 2 0 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Reading Royals
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Norfolk Admirals
+Away Period Scores: 1 4 0
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Elmira Jackals
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Elmira Jackals
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 1 1 0 0
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Wichita Thunder
+Losing Team: Evansville IceMen
+ 
+Inserting ECHL Game Data From 1/6/2016.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Manchester Monarchs
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 3 0
+Home Score: 5
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 3 1 0
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Rapid City Rush
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Utah Grizzlies
+ 
+Inserting ECHL Game Data From 1/5/2016.
+
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 0 3 0 0 0
+Home Score: 3
+Away Team: Missouri Mavericks
+Away Period Scores: 2 1 0 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Missouri Mavericks
+Losing Team: Tulsa Oilers
+ 
+Inserting ECHL Game Data From 1/7/2016.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Florida Everblades
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Greenville Swamp Rabbits
+ 
+Inserting ECHL Game Data From 1/8/2016.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Toledo Walleye
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Reading Royals
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 1 1 1
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 1 1 1 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Kalamazoo Wings
+Losing Team: Brampton Beast
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: South Carolina Stingrays
+Away Period Scores: 3 2 0
+Away Score: 5
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 1 0 0
+Home Score: 2
+Away Team: Florida Everblades
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Manchester Monarchs
+Away Period Scores: 3 2 1
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Elmira Jackals
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 0 2 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 0 0 0 1
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 0 2 0 0 0
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Atlanta Gladiators
+Losing Team: Alaska Aces
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Colorado Eagles
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Allen Americans
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0 0 0
+Home Score: 1
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Fort Wayne Komets
+Away Period Scores: 2 2 3
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Quad City Mallards
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 1 0 0 1
+Home Score: 2
+Away Team: Missouri Mavericks
+Away Period Scores: 0 0 1 0
+Away Score: 1
+Number Of Periods: 4
+Winning Team: Rapid City Rush
+Losing Team: Missouri Mavericks
+ 
+Inserting ECHL Game Data From 1/9/2016.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Toledo Walleye
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Reading Royals
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: South Carolina Stingrays
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 1 0 0 1
+Home Score: 2
+Away Team: Florida Everblades
+Away Period Scores: 0 0 1 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Florida Everblades
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Manchester Monarchs
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Elmira Jackals
+ 
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 0 2 0 0 0
+Home Score: 2
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 1 0 0 1
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Kalamazoo Wings
+Losing Team: Brampton Beast
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 1 1 1
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 0 1 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Norfolk Admirals
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Orlando Solar Bears
+Away Period Scores: 2 0 4
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Wheeling Nailers
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 3 2
+Home Score: 6
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Wichita Thunder
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Idaho Steelheads
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Idaho Steelheads
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 3 0 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 1/10/2016.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 3 3
+Home Score: 7
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Brampton Beast
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Alaska Aces
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Indy Fuel
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Colorado Eagles
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Colorado Eagles
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Fort Wayne Komets
+ 
+Inserting ECHL Game Data From 1/12/2016.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 3 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Norfolk Admirals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 1 0 1
+Home Score: 4
+Away Team: Alaska Aces
+Away Period Scores: 0 1 2 0
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Atlanta Gladiators
+Losing Team: Alaska Aces
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Missouri Mavericks
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 1/13/2016.
+
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Rapid City Rush
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Brampton Beast
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 0 4
+Home Score: 5
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Tulsa Oilers
+ 
+Inserting ECHL Game Data From 1/14/2016.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Alaska Aces
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Norfolk Admirals
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: Elmira Jackals
+ 
+Inserting ECHL Game Data From 1/15/2016.
+
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Reading Royals
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Evansville IceMen
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Evansville IceMen
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 3 2
+Home Score: 5
+Away Team: Brampton Beast
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Brampton Beast
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Rapid City Rush
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Rapid City Rush
+Losing Team: Indy Fuel
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 0 3
+Home Score: 4
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 2 1
+Home Score: 5
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 2 0 1
+Home Score: 3
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 2 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Quad City Mallards
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 3 2 2
+Home Score: 7
+Away Team: Wichita Thunder
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Wichita Thunder
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 2 1
+Home Score: 4
+Away Team: Missouri Mavericks
+Away Period Scores: 2 2 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Colorado Eagles
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Tulsa Oilers
+ 
+Inserting ECHL Game Data From 1/16/2016.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Reading Royals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Reading Royals
+ 
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 0 2 0
+Home Score: 2
+Away Team: Norfolk Admirals
+Away Period Scores: 2 0 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Norfolk Admirals
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 1 0 1
+Home Score: 2
+Away Team: Brampton Beast
+Away Period Scores: 0 1 0 0
+Away Score: 1
+Number Of Periods: 4
+Winning Team: Florida Everblades
+Losing Team: Brampton Beast
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 3 1 0
+Home Score: 4
+Away Team: Alaska Aces
+Away Period Scores: 3 0 1 1
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Alaska Aces
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 3 1 0
+Home Score: 4
+Away Team: Wheeling Nailers
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Rapid City Rush
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Rapid City Rush
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Orlando Solar Bears
+Losing Team: Indy Fuel
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Ford Center, Evansville
+Home Team: Evansville IceMen
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Quad City Mallards
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Quad City Mallards
+Losing Team: Evansville IceMen
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 2 0 1
+Home Score: 3
+Away Team: Wichita Thunder
+Away Period Scores: 1 1 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Utah Grizzlies
+Losing Team: Wichita Thunder
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 1 3
+Home Score: 5
+Away Team: Missouri Mavericks
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Missouri Mavericks
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 1/17/2016.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 1 3 0 0 0
+Home Score: 4
+Away Team: Norfolk Admirals
+Away Period Scores: 1 2 1 0 1
+Away Score: 5
+Number Of Periods: 5
+Winning Team: Norfolk Admirals
+Losing Team: Manchester Monarchs
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Wheeling Nailers
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Wheeling Nailers
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 0 1 2 0 0
+Home Score: 3
+Away Team: Alaska Aces
+Away Period Scores: 1 2 0 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Alaska Aces
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Elmira Jackals
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Rapid City Rush
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Rapid City Rush
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 2 1 0 0 0
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 2 0 1 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Cincinnati Cyclones
+Losing Team: Allen Americans
+ 
+Home Arena: iWireless Center, Moline
+Home Team: Quad City Mallards
+Home Period Scores: 0 2 0
+Home Score: 2
+Away Team: Kalamazoo Wings
+Away Period Scores: 4 0 3
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Quad City Mallards
+ 
+Inserting ECHL Game Data From 1/18/2016.
+
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Adirondack Thunder
+Away Period Scores: 0 2 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Reading Royals
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 0 1 0 1
+Home Score: 2
+Away Team: Brampton Beast
+Away Period Scores: 1 0 0 0 0
+Away Score: 1
+Number Of Periods: 5
+Winning Team: Elmira Jackals
+Losing Team: Brampton Beast
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 2 1 0 0
+Home Score: 3
+Away Team: Cincinnati Cyclones
+Away Period Scores: 1 2 0 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Cincinnati Cyclones
+Losing Team: Allen Americans
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 0 2 0 1
+Home Score: 3
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 1 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Utah Grizzlies
+Losing Team: Wichita Thunder
+ 
+Inserting ECHL Game Data From 1/19/2016.
+
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Atlanta Gladiators
+Away Period Scores: 2 1 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Atlanta Gladiators
+Losing Team: Greenville Swamp Rabbits
+ 
+Inserting ECHL Game Data From 1/22/2016.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 1 0 0
+Home Score: 1
+Away Team: Brampton Beast
+Away Period Scores: 0 0 1 1
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Brampton Beast
+Losing Team: Reading Royals
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 1 3 1 0 0
+Home Score: 5
+Away Team: Manchester Monarchs
+Away Period Scores: 1 4 0 0 1
+Away Score: 6
+Number Of Periods: 5
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Bon Secours Wellness Arena, Greenville
+Home Team: Greenville Swamp Rabbits
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 0 3 3
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 2 1 1
+Home Score: 4
+Away Team: Atlanta Gladiators
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Utah Grizzlies
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 0 1 1
+Home Score: 3
+Away Team: Elmira Jackals
+Away Period Scores: 0 2 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Norfolk Admirals
+Losing Team: Elmira Jackals
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 1 2
+Home Score: 4
+Away Team: Orlando Solar Bears
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Quad City Mallards
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 3 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 0 1 1
+Home Score: 2
+Away Team: Kalamazoo Wings
+Away Period Scores: 0 1 0 0
+Away Score: 1
+Number Of Periods: 4
+Winning Team: Wheeling Nailers
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 3 0 0
+Home Score: 3
+Away Team: Allen Americans
+Away Period Scores: 0 2 1 1
+Away Score: 4
+Number Of Periods: 4
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 0 1
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Colorado Eagles
+Away Period Scores: 1 3 1
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/23/2016.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Adirondack Thunder
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 3 0
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 2 0 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Evansville IceMen
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: North Charleston Coliseum, North Charleston
+Home Team: South Carolina Stingrays
+Home Period Scores: 1 2 0
+Home Score: 3
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 3 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Utah Grizzlies
+Away Period Scores: 1 1 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Toledo Walleye
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Elmira Jackals
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Elmira Jackals
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Quad City Mallards
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 4 2
+Home Score: 6
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: WesBanco Arena, Wheeling
+Home Team: Wheeling Nailers
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Kalamazoo Wings
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 1 1
+Home Score: 3
+Away Team: Tulsa Oilers
+Away Period Scores: 0 1 5
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Missouri Mavericks
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Allen Americans
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Home Arena: Rushmore Plaza Civic Center, Rapid City
+Home Team: Rapid City Rush
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Colorado Eagles
+Away Period Scores: 2 0 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Rapid City Rush
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 1 2 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/24/2016.
+
+Home Arena: Verizon Wireless Arena, Manchester
+Home Team: Manchester Monarchs
+Home Period Scores: 0 1 1 1
+Home Score: 3
+Away Team: Adirondack Thunder
+Away Period Scores: 2 0 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Manchester Monarchs
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 0 1 2
+Home Score: 3
+Away Team: Fort Wayne Komets
+Away Period Scores: 1 0 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 1 4
+Home Score: 5
+Away Team: Wichita Thunder
+Away Period Scores: 1 0 3
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Wichita Thunder
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 2 0 3
+Home Score: 5
+Away Team: Utah Grizzlies
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Utah Grizzlies
+ 
+Home Arena: Sullivan Arena, Anchorage
+Home Team: Alaska Aces
+Home Period Scores: 2 1 0
+Home Score: 3
+Away Team: Idaho Steelheads
+Away Period Scores: 1 0 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Alaska Aces
+Losing Team: Idaho Steelheads
+ 
+Inserting ECHL Game Data From 1/25/2016.
+
+Home Arena: Santander Arena, Reading
+Home Team: Reading Royals
+Home Period Scores: 0 1 1 0
+Home Score: 2
+Away Team: Brampton Beast
+Away Period Scores: 1 1 0 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Brampton Beast
+Losing Team: Reading Royals
+ 
+Inserting ECHL Game Data From 1/26/2016.
+
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 1 3 1 1
+Home Score: 6
+Away Team: Evansville IceMen
+Away Period Scores: 3 1 1 0
+Away Score: 5
+Number Of Periods: 4
+Winning Team: Missouri Mavericks
+Losing Team: Evansville IceMen
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Allen Americans
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Inserting ECHL Game Data From 1/27/2016.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 0 0
+Home Score: 0
+Away Team: Manchester Monarchs
+Away Period Scores: 1 1 1
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Reading Royals
+Away Period Scores: 1 4 2
+Away Score: 7
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Elmira Jackals
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 2 0 1
+Home Score: 3
+Away Team: Indy Fuel
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Cincinnati Cyclones
+Losing Team: Indy Fuel
+ 
+Home Arena: Intrust Bank Arena, Wichita
+Home Team: Wichita Thunder
+Home Period Scores: 3 0 1
+Home Score: 4
+Away Team: Evansville IceMen
+Away Period Scores: 1 1 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Wichita Thunder
+Losing Team: Evansville IceMen
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 2 2 2
+Home Score: 6
+Away Team: Utah Grizzlies
+Away Period Scores: 0 1 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Utah Grizzlies
+ 
+Home Arena: CenturyLink Arena, Boise
+Home Team: Idaho Steelheads
+Home Period Scores: 1 3 1
+Home Score: 5
+Away Team: Rapid City Rush
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Rapid City Rush
+ 
+Inserting ECHL Game Data From 1/28/2016.
+
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Manchester Monarchs
+Away Period Scores: 0 3 0
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Manchester Monarchs
+Losing Team: Orlando Solar Bears
+ 
+Inserting ECHL Game Data From 1/29/2016.
+
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 0 5 1
+Home Score: 6
+Away Team: Quad City Mallards
+Away Period Scores: 1 1 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Kalamazoo Wings
+Losing Team: Quad City Mallards
+ 
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 2 1
+Home Score: 3
+Away Team: Reading Royals
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Adirondack Thunder
+Losing Team: Reading Royals
+ 
+Home Arena: Amway Center, Orlando
+Home Team: Orlando Solar Bears
+Home Period Scores: 0 3 0 0 0
+Home Score: 3
+Away Team: Manchester Monarchs
+Away Period Scores: 2 0 1 0 1
+Away Score: 4
+Number Of Periods: 5
+Winning Team: Manchester Monarchs
+Losing Team: Orlando Solar Bears
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 0 1 0
+Home Score: 1
+Away Team: Wheeling Nailers
+Away Period Scores: 1 1 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Wheeling Nailers
+Losing Team: Elmira Jackals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 2 2 0
+Home Score: 4
+Away Team: Brampton Beast
+Away Period Scores: 0 0 0
+Away Score: 0
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Brampton Beast
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 4 1 3
+Home Score: 8
+Away Team: South Carolina Stingrays
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Norfolk Admirals
+Losing Team: South Carolina Stingrays
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 0 3 1
+Home Score: 4
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Florida Everblades
+Losing Team: Greenville Swamp Rabbits
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 4 2 1
+Home Score: 7
+Away Team: Evansville IceMen
+Away Period Scores: 0 0 3
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 0 0 1
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 0 2 2
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Allen County War Memorial Coliseum, Fort Wayne
+Home Team: Fort Wayne Komets
+Home Period Scores: 2 0 2
+Home Score: 4
+Away Team: Cincinnati Cyclones
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Cincinnati Cyclones
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 0 4 3
+Home Score: 7
+Away Team: Tulsa Oilers
+Away Period Scores: 0 0 1
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Wichita Thunder
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 1 3 0
+Home Score: 4
+Away Team: Rapid City Rush
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Rapid City Rush
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Alaska Aces
+Away Period Scores: 2 0 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/30/2016.
+
+Home Arena: Glens Falls Civic Center, Glens Falls
+Home Team: Adirondack Thunder
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Reading Royals
+Away Period Scores: 1 0 2
+Away Score: 3
+Number Of Periods: 3
+Winning Team: Reading Royals
+Losing Team: Adirondack Thunder
+ 
+Home Arena: Germain Arena, Estero
+Home Team: Florida Everblades
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: Greenville Swamp Rabbits
+Away Period Scores: 0 2 0
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Greenville Swamp Rabbits
+Losing Team: Florida Everblades
+ 
+Home Arena: First Arena, Elmira
+Home Team: Elmira Jackals
+Home Period Scores: 1 2 0 0 1
+Home Score: 4
+Away Team: Wheeling Nailers
+Away Period Scores: 2 1 0 0 0
+Away Score: 3
+Number Of Periods: 5
+Winning Team: Elmira Jackals
+Losing Team: Wheeling Nailers
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 0 0 0 0
+Home Score: 1
+Away Team: Idaho Steelheads
+Away Period Scores: 0 1 0 0 1
+Away Score: 2
+Number Of Periods: 5
+Winning Team: Idaho Steelheads
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Norfolk Scope, Norfolk
+Home Team: Norfolk Admirals
+Home Period Scores: 1 0 0
+Home Score: 1
+Away Team: South Carolina Stingrays
+Away Period Scores: 2 2 2
+Away Score: 6
+Number Of Periods: 3
+Winning Team: South Carolina Stingrays
+Losing Team: Norfolk Admirals
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 0 1 1
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Toledo Walleye
+Losing Team: Fort Wayne Komets
+ 
+Home Arena: Indiana Farmers Coliseum, Indianapolis
+Home Team: Indy Fuel
+Home Period Scores: 1 0 2
+Home Score: 3
+Away Team: Evansville IceMen
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Indy Fuel
+Losing Team: Evansville IceMen
+ 
+Home Arena: US Bank Arena, Cincinnati
+Home Team: Cincinnati Cyclones
+Home Period Scores: 0 1 1 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 2 0 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Cincinnati Cyclones
+Losing Team: Quad City Mallards
+ 
+Home Arena: BOK Center, Tulsa
+Home Team: Tulsa Oilers
+Home Period Scores: 1 2 2
+Home Score: 5
+Away Team: Allen Americans
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Tulsa Oilers
+Losing Team: Allen Americans
+ 
+Home Arena: Silverstein Eye Centers Arena, Independence
+Home Team: Missouri Mavericks
+Home Period Scores: 2 1 2
+Home Score: 5
+Away Team: Wichita Thunder
+Away Period Scores: 0 1 1
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Missouri Mavericks
+Losing Team: Wichita Thunder
+ 
+Home Arena: Maverik Center, West Valley City
+Home Team: Utah Grizzlies
+Home Period Scores: 3 2 0
+Home Score: 5
+Away Team: Rapid City Rush
+Away Period Scores: 1 2 1
+Away Score: 4
+Number Of Periods: 3
+Winning Team: Utah Grizzlies
+Losing Team: Rapid City Rush
+ 
+Home Arena: Budweiser Events Center, Loveland
+Home Team: Colorado Eagles
+Home Period Scores: 2 4 1
+Home Score: 7
+Away Team: Alaska Aces
+Away Period Scores: 0 0 2
+Away Score: 2
+Number Of Periods: 3
+Winning Team: Colorado Eagles
+Losing Team: Alaska Aces
+ 
+Inserting ECHL Game Data From 1/31/2016.
+
+Home Arena: Powerade Centre, Brampton
+Home Team: Brampton Beast
+Home Period Scores: 1 1 0 0
+Home Score: 2
+Away Team: Wheeling Nailers
+Away Period Scores: 0 0 2 1
+Away Score: 3
+Number Of Periods: 4
+Winning Team: Wheeling Nailers
+Losing Team: Brampton Beast
+ 
+Home Arena: Infinite Energy Arena, Duluth
+Home Team: Atlanta Gladiators
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Idaho Steelheads
+Away Period Scores: 1 1 3
+Away Score: 5
+Number Of Periods: 3
+Winning Team: Idaho Steelheads
+Losing Team: Atlanta Gladiators
+ 
+Home Arena: Wings Event Center, Kalamazoo
+Home Team: Kalamazoo Wings
+Home Period Scores: 1 1 0
+Home Score: 2
+Away Team: Fort Wayne Komets
+Away Period Scores: 2 0 4
+Away Score: 6
+Number Of Periods: 3
+Winning Team: Fort Wayne Komets
+Losing Team: Kalamazoo Wings
+ 
+Home Arena: Allen Event Center, Allen
+Home Team: Allen Americans
+Home Period Scores: 2 0 0
+Home Score: 2
+Away Team: Tulsa Oilers
+Away Period Scores: 0 1 0
+Away Score: 1
+Number Of Periods: 3
+Winning Team: Allen Americans
+Losing Team: Tulsa Oilers
+ 
+Home Arena: Huntington Center, Toledo
+Home Team: Toledo Walleye
+Home Period Scores: 2 0 0 1
+Home Score: 3
+Away Team: Quad City Mallards
+Away Period Scores: 0 2 0 0
+Away Score: 2
+Number Of Periods: 4
+Winning Team: Toledo Walleye
+Losing Team: Quad City Mallards
+ 
+Database Check Return: ok
+
+DONE! All Game Data Inserted.
+DONE! ECHL Database Created.
