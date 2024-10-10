@@ -184,7 +184,8 @@ while (cur_todays_games < num_todays_games):
         "colspan=\"1\" rowspan=\"1\" class=\"hShots\">") + "([0-9]+)" + re.escape("</td>")
     home_team_shots = re.findall(pre_team_shots, curgame_text)
     pre_team_stats = re.escape("colspan=\"1\" rowspan=\"1\" class=\"") + \
-        "((a|h)[a-zA-Z]+)" + re.escape("\">") + "([0-9\\/]+)" + re.escape("</td>")
+        "((a|h)[a-zA-Z]+)" + re.escape("\">") + \
+        "([0-9\\/]+)" + re.escape("</td>")
     get_team_stats = re.findall(pre_team_stats, curgame_text)
     if (numpers == 3):
         print(

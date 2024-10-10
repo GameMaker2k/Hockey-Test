@@ -57,10 +57,10 @@ def UpdateTeamData(sqldatacon, teamid, dataname, addtodata, addtype):
     if (addtype == "="):
         TMPData = addtodata
     if (addtype == "+"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Teams WHERE id=" + str(teamid)).fetchone()[0]) + addtodata
     if (addtype == "-"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Teams WHERE id=" + str(teamid)).fetchone()[0]) - addtodata
     sqldatacon[0].execute(
         "UPDATE " +
@@ -125,10 +125,10 @@ def UpdateGameData(sqldatacon, gameid, dataname, addtodata, addtype):
     if (addtype == "="):
         TMPData = addtodata
     if (addtype == "+"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Games WHERE id=" + str(gameid)).fetchone()[0]) + addtodata
     if (addtype == "-"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Games WHERE id=" + str(gameid)).fetchone()[0]) - addtodata
     sqldatacon[0].execute(
         "UPDATE " +
@@ -193,10 +193,10 @@ def UpdateArenaData(sqldatacon, arenaid, dataname, addtodata, addtype):
     if (addtype == "="):
         TMPData = addtodata
     if (addtype == "+"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Arenas WHERE id=" + str(arenaid)).fetchone()[0]) + addtodata
     if (addtype == "-"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " +
                       leaguename + "Arenas WHERE id=" + str(arenaid)).fetchone()[0]) - addtodata
     sqldatacon[0].execute(
         "UPDATE " +
@@ -261,10 +261,10 @@ def UpdateConferenceData(sqldatacon, conference, dataname, addtodata, addtype):
     if (addtype == "="):
         TMPData = addtodata
     if (addtype == "+"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + leaguename + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + leaguename +
                       "Conferences WHERE Conference=\"" + str(conference) + "\"").fetchone()[0]) + addtodata
     if (addtype == "-"):
-        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + leaguename + \
+        TMPData = int(sqldatacon[0].execute("SELECT " + dataname + " FROM " + leaguename +
                       "Conferences WHERE Conference=\"" + str(conference) + "\"").fetchone()[0]) - addtodata
     sqldatacon[0].execute(
         "UPDATE " +
