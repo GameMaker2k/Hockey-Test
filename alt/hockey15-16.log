@@ -1,4 +1,4 @@
-removed '/mnt/c/Users/Joshua Przyborowski/Documents/GitHub/Hockey-Test/alt/echl15-16/echl15-16.log'
+removed ‘/home/cooldude2k/Drive/Hockey/hockey/echl15-16/echl15-16.log’
 Creating ECHL Database.
 Creating ECHL Conference Table.
 Inserting ECHL Conference Data.
@@ -7362,10 +7362,10 @@ Database Check Return: ok
 DONE! All Game Data Inserted.
 DONE! ECHL Database Created.
 
-real	0m34.046s
-user	0m1.846s
-sys	0m1.450s
-removed '/mnt/c/Users/Joshua Przyborowski/Documents/GitHub/Hockey-Test/alt/ahl15-16/ahl15-16.log'
+real	2m53.398s
+user	0m5.488s
+sys	0m2.092s
+removed ‘/home/cooldude2k/Drive/Hockey/hockey/ahl15-16/ahl15-16.log’
 Creating AHL Database.
 Creating AHL Conference Table.
 Inserting AHL Conference Data.
@@ -15076,10 +15076,10 @@ Database Check Return: ok
 DONE! All Game Data Inserted.
 DONE! AHL Database Created.
 
-real	0m41.167s
-user	0m2.643s
-sys	0m1.931s
-removed '/mnt/c/Users/Joshua Przyborowski/Documents/GitHub/Hockey-Test/alt/nhl15-16/nhl15-16.log'
+real	3m0.020s
+user	0m5.812s
+sys	0m2.076s
+removed ‘/home/cooldude2k/Drive/Hockey/hockey/nhl15-16/nhl15-16.log’
 Creating NHL Database.
 Creating NHL Conference Table.
 Inserting NHL Conference Data.
@@ -23765,6 +23765,6 @@ Database Check Return: ok
 DONE! All Game Data Inserted.
 DONE! NHL Database Created.
 
-real	0m53.083s
-user	0m2.820s
-sys	0m2.128s
+real	3m56.015s
+user	0m6.968s
+sys	0m2.660s
